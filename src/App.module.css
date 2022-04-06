@@ -1,0 +1,11 @@
+:root{
+    --main-color-yellow: #ffd25b;
+    --main-color-beige: #f8f8ee;
+    --main-color-charcoal: #474a4d;
+    --font-size-lg: 25px;
+    --font-size-md: 20px;
+    --font-size-sm: 16px;
+
+    margin: 0;
+    padding: 0;
+}
