@@ -55,6 +55,7 @@ a:hover {
   height: 90vh;
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .greeting {
@@ -65,7 +66,7 @@ a:hover {
 }
 
 .greeting-title{
-  font-size: 70px;
+  font-size: var(--font-size-large-title);
 }
 
 .animating-container {
@@ -133,8 +134,9 @@ a:hover {
 }
 
 .gif {
-  float: right;
+  margin-left: 60%;
   width: 350px;
+  position: absolute;
 }
 
 .flower {
