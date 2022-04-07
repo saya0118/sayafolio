@@ -1,0 +1,42 @@
+.toggle-button{
+    width: 70px;
+    height: 30px;
+}
+
+.toggle-input{
+    display: none;
+}
+
+.toggle-input:checked + .toggle-label{
+    background-color: var(--main-color-yellow);
+}
+
+.toggle-input:checked + .toggle-label:after{
+    left: 28px;
+    content: '';
+}
+
+.toggle-label{
+    width: 60px;
+    height: 30px;
+    background-color: var(--main-color-charcoal);
+    position: relative;
+    display: inline-block;
+    border-radius: 46px;
+    transition: 0.4s;
+    box-sizing: border-box;
+}
+
+.toggle-label:after{
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    left: -1px;
+    top: -1px;
+    background-color: var(--main-color-yellow);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: 0.4s;
+    cursor: pointer;
+}
