@@ -1,0 +1,35 @@
+.profile {
+  min-height: 100vh;
+  background-color: var(--main-color-beige);
+  padding: 30px 10%;
+}
+
+.title-container{
+    padding: 20px;
+}
+
+.container {
+  padding: 20px 20px;
+  text-align: center;
+  display: table;
+  height: 80vh;
+}
+
+p {
+  width: 50%;
+  color: var(--main-color-charcoal);
+  font-size: var(--font-size-sm);
+  text-align: left;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.image {
+  width: 50%;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.profile-image {
+  width: 100px;
+}
