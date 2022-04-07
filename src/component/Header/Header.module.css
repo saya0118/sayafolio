@@ -8,6 +8,7 @@
   font-size: var(--font-size-sm);
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid var(--main-color-gray);
 }
 
 .nav-right {
@@ -128,6 +129,7 @@ a:hover {
 .greeting-description {
   font-size: var(--font-size-lg);
   padding-top: 30px;
+  color: var(--main-color-charcoal);
 }
 
 .gif {
