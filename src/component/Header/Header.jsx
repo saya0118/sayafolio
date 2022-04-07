@@ -1,23 +1,27 @@
 import React from "react";
 import styles from "./Header.module.css";
 import svgLogo from "../../image/light-logo.svg";
+import { ToggleButton } from "../ToggleButton";
 
 export const Header = () => {
   return (
     <div className={styles.header}>
       <div className={styles["nav-bar"]}>
         <div className={styles["nav-left"]}>
-          <ul className={styles['w-sh']}>
+          <ul className={styles["w-sh"]}>
             <li>
               <img src={svgLogo} alt="sayaka's logo" className={styles.logo} />
             </li>
             <li>
               <p className={styles.name}>Sayaka Matsuda</p>
             </li>
+            <li>
+              <ToggleButton />
+            </li>
           </ul>
         </div>
         <div className={styles["nav-right"]}>
-          <ul className={styles['w-lo']}>
+          <ul className={styles["w-lo"]}>
             <li>
               <a>Home</a>
             </li>
