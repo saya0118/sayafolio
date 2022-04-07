@@ -10,9 +10,6 @@
   justify-content: space-between;
 }
 
-.nav-left {
-}
-
 .nav-right {
   align-items: center;
   display: flex;
@@ -64,6 +61,10 @@ a:hover {
   height: 300px;
   font-size: 60px;
   top: 300px;
+}
+
+.greeting-title{
+  font-size: 70px;
 }
 
 .animating-container {
@@ -124,7 +125,7 @@ a:hover {
   }
 }
 
-.greeting-description{
+.greeting-description {
   font-size: var(--font-size-lg);
   padding-top: 30px;
 }
