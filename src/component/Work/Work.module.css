@@ -1,4 +1,4 @@
-.work {
+/* .work {
   min-height: 200vh;
   background-color: var(--main-color-beige);
   text-align: center;
@@ -13,20 +13,6 @@ ul {
   height: 50vh;
   width: 100%;
   justify-content: space-between;
-
-  /* animation: slideInRight 1s;
-
-  @keyframes slideInRight {
-    0% {
-      opacity: 0;
-      transform: translateX(200px);
-    }
-
-    100% {
-      opacity: 1;
-      transform: translateX(0px);
-    }
-  } */
 }
 
 .project-img {
@@ -95,4 +81,4 @@ a:hover {
       transform: translateX(0px);
     }
   }
-}
+} */

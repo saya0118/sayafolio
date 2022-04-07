@@ -1,37 +1,37 @@
 import React from "react";
 import styles from "./Header.module.css";
-import svgLogo from "../../image/logo.svg";
+import svgLogo from "../../image/light-logo.svg";
 
 export const Header = () => {
   return (
     <div className={styles.header}>
       <div className={styles["nav-bar"]}>
         <div className={styles["nav-left"]}>
-          <ul>
+          <ul className={styles['w-sh']}>
             <li>
               <img src={svgLogo} alt="sayaka's logo" className={styles.logo} />
             </li>
             <li>
-              <p>Sayaka Matsuda</p>
+              <p className={styles.name}>Sayaka Matsuda</p>
             </li>
           </ul>
         </div>
         <div className={styles["nav-right"]}>
-          <ul>
+          <ul className={styles['w-lo']}>
             <li>
-              <a>HOME</a>
+              <a>Home</a>
             </li>
             <li>
-              <a>ABOUT</a>
+              <a>About</a>
             </li>
             <li>
-              <a>WORKS</a>
+              <a>Projects</a>
             </li>
             <li>
-              <a>SKILLS</a>
+              <a>Skills</a>
             </li>
             <li>
-              <a>CONTACT</a>
+              <a>Contact</a>
             </li>
           </ul>
         </div>
