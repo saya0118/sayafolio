@@ -8,6 +8,7 @@
   font-size: var(--font-size-sm);
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid var(--main-color-gray);
 }
 
 .nav-right {
@@ -54,6 +55,7 @@ a:hover {
   height: 90vh;
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .greeting {
@@ -64,7 +66,7 @@ a:hover {
 }
 
 .greeting-title{
-  font-size: 70px;
+  font-size: var(--font-size-large-title);
 }
 
 .animating-container {
@@ -128,11 +130,13 @@ a:hover {
 .greeting-description {
   font-size: var(--font-size-lg);
   padding-top: 30px;
+  color: var(--main-color-charcoal);
 }
 
 .gif {
-  float: right;
-  width: 350px;
+  margin-left: 70%;
+  height: 40vh;
+  position: absolute;
 }
 
 .flower {

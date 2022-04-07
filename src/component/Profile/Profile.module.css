@@ -1,36 +1,40 @@
 .profile {
-  min-height: 100vh;
+  height: 700px;
   background-color: var(--main-color-beige);
   padding: 30px 10%;
 }
 
-.title-container{
-    padding: 20px;
-}
-
 .container {
-  padding: 20px 20px;
-  text-align: center;
-  display: table;
-  height: 80vh;
-}
-
-p {
-  width: 50%;
-  color: var(--main-color-charcoal);
-  font-size: var(--font-size-sm);
-  text-align: left;
-  vertical-align: middle;
-  display: table-cell;
-  line-height: 1.5em;
+  /* text-align: center; */
+  display: grid;
+  display: flex;
 }
 
 .image {
   width: 50%;
-  vertical-align: middle;
   display: table-cell;
 }
 
 .profile-image {
   box-shadow: -20px 20px 3px var(--main-color-yellow);
+}
+
+.profile-text {
+  display: table-cell;
+  width: 50%;
+}
+
+.title {
+  font-size: var(--font-size-md-title);
+  color: var(--main-color-charcoal);
+  text-align: initial;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+p {
+  color: var(--main-color-charcoal);
+  font-size: var(--font-size-sm);
+  text-align: left;
+  line-height: 1.5em;
 }
