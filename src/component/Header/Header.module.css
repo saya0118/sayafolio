@@ -26,7 +26,7 @@ ul {
 }
 
 .w-sh {
-  width: 200px;
+  width: 300px;
 }
 
 .w-lo {
@@ -54,21 +54,90 @@ a:hover {
 }
 
 .greeting-container {
-  width: 100%;
-  height: 80vh;
+  height: 90vh;
+  display: flex;
+  align-items: center;
 }
 
 .greeting {
-  color: var(--main-color-charcoal);
+  width: 100%;
+  height: 300px;
   font-size: 60px;
-  position: absolute;
-  top: 250px;
+  top: 300px;
+}
+
+.animating-container {
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.title-word {
+  animation: color-animation 6s linear infinite;
+}
+
+.title-word-1 {
+  --color-1: #a1bba2;
+  --color-2: #d8bb41;
+  --color-3: #bacdd1;
+}
+
+.title-word-2 {
+  --color-1: #c0a9bd;
+  --color-2: #f1c064;
+  --color-3: #c5c56a;
+}
+
+.title-word-3 {
+  --color-1: #e4af9b;
+  --color-2: #b7d4be;
+  --color-3: #e6c2bf;
+}
+
+.title-word-4 {
+  --color-1: #529bba;
+  --color-2: #f6bfbc;
+  --color-3: #f6ad49;
+}
+
+@keyframes color-animation {
+  0% {
+    color: var(--color-1);
+  }
+  32% {
+    color: var(--color-1);
+  }
+  33% {
+    color: var(--color-2);
+  }
+  65% {
+    color: var(--color-2);
+  }
+  66% {
+    color: var(--color-3);
+  }
+  99% {
+    color: var(--color-3);
+  }
+  100% {
+    color: var(--color-1);
+  }
+}
+
+.greeting-description{
+  font-size: var(--font-size-lg);
+  padding-top: 30px;
+}
+
+.gif {
+  float: right;
+  width: 350px;
 }
 
 .flower {
-  position: relative;
+  /* position: relative; */
   height: 60vmin;
-  margin-top: 10vmin;
+  /* margin-top: 10vmin; */
   filter: hue-rotate(165deg) saturate(2000%) grayscale(50%);
 }
 
