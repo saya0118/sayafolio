@@ -3,6 +3,7 @@ import styles from "./Contact.module.css";
 import { Social } from "../Social";
 import { db } from "./firebase";
 import contactGif from "../../image/contact.gif";
+import { ResumeButton } from "../ResumeButton";
 
 export const Contact = () => {
   const [name, setName] = useState("");
@@ -39,6 +40,9 @@ export const Contact = () => {
     <div className={styles.contact}>
       <h1 className={styles.title}>Say Hello</h1>
       <div className={styles["contact-flex"]}>
+        <div className={styles["contact-flex-inner"]}>
+          <img src={contactGif} className={styles["contact-gif"]} />
+        </div>
         <div
           className={`${styles["contact-detail"]} ${styles["contact-flex-inner"]}`}
         >
@@ -47,7 +51,7 @@ export const Contact = () => {
           <h2 className={styles["contact-title"]}>Phone</h2>
           <p className={styles["contact-info"]}>+1 7788725098</p>
           <Social />
-          <img src={contactGif} className={styles["contact-gif"]} />
+          <ResumeButton />
         </div>
         <div
           className={`${styles["contact-form"]} ${styles["contact-flex-inner"]}`}
