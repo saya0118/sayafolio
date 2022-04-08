@@ -1,11 +1,10 @@
 .profile {
-  height: 700px;
+  height: 600px;
   background-color: var(--main-color-beige);
   padding: 30px 10%;
 }
 
 .container {
-  /* text-align: center; */
   display: grid;
   display: flex;
 }
@@ -28,7 +27,6 @@
   font-size: var(--font-size-md-title);
   color: var(--main-color-charcoal);
   text-align: initial;
-  margin-top: 30px;
   margin-bottom: 30px;
 }
 
