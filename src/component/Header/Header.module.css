@@ -140,9 +140,10 @@ a:hover {
 }
 
 .gif {
-  margin-left: 70%;
+  margin-left: 68%;
   height: 40vh;
   position: absolute;
+  top: 300px;
 }
 
 .flower {
