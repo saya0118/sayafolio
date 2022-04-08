@@ -1,6 +1,9 @@
 .skill {
   height: 550px;
   padding: 30px 10%;
+  max-width: var(--max-width-first);
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .title {

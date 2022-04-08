@@ -1,7 +1,9 @@
 .header {
   min-height: 100vh;
   background-color: var(--main-color-beige);
-  margin: 5px 10%;
+  max-width: var(--max-width-first);
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .nav-bar {
@@ -47,6 +49,13 @@ a {
 }
 
 a:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  text-decoration-color: var(--main-color-yellow);
+  text-decoration-style: dashed;
+}
+
+a:hover {
   cursor: pointer;
 }
 
@@ -64,7 +73,7 @@ a:hover {
   top: 300px;
 }
 
-.greeting-title{
+.greeting-title {
   font-size: var(--font-size-large-title);
 }
 
@@ -133,9 +142,10 @@ a:hover {
 }
 
 .gif {
-  margin-left: 70%;
+  margin-left: 68%;
   height: 40vh;
   position: absolute;
+  top: 300px;
 }
 
 .flower {
