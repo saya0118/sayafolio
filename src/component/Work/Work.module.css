@@ -1,8 +1,6 @@
 .work {
-  height: auto;
-  padding: 30px 10%;
-  min-height: 200vh;
-  background-color: var(--main-color-beige);
+  padding: 40px 10%;
+  background-color: var(--main-color-mocha);
 }
 
 .title{

@@ -81,7 +81,7 @@ export const Work = () => {
           </div>
           <div className={styles["project-description-box"]}>
             <p className={styles["project-language"]}>
-              React/React Hooks/Tailwind.css/Google API
+              TypeScript/React Hooks/Tailwind.css/Google API/Unsplash API
             </p>
             <h3 className={styles["project-title"]}>Voyage Notes</h3>
             <p className={styles["project-description"]}>
