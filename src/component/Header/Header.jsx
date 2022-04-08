@@ -3,6 +3,7 @@ import styles from "./Header.module.css";
 import svgLogo from "../../image/light-logo.svg";
 import flowerGif from "../../image/flower.gif";
 import { ToggleButton } from "../ToggleButton";
+import { Social } from "../Social";
 
 export const Header = () => {
   return (
@@ -70,6 +71,7 @@ export const Header = () => {
           <p className={styles["greeting-description"]}>
             A Frontend Developer based in Vancouver.
           </p>
+          <Social />
           <img src={flowerGif} className={styles.gif} />
         </div>
       </div>
