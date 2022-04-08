@@ -1,6 +1,7 @@
 import React from "react";
 import ProfileImage from "../../image/profile.png";
 import styles from "./Profile.module.css";
+import { Social } from "../Social";
 
 export const Profile = () => {
   return (
@@ -13,7 +14,7 @@ export const Profile = () => {
             alt="profile image"
           />
         </div>
-        <div className={styles['profile-text']}>
+        <div className={styles["profile-text"]}>
           <h1 className={styles["title"]}>About me</h1>
           <p>
             Hi! I'm Saya.
@@ -31,6 +32,7 @@ export const Profile = () => {
             it good timing to change my career and jump into the unknown world?"
             That's how I started to get in the world of programming.
           </p>
+          <Social/>
         </div>
       </div>
     </div>
