@@ -1,6 +1,9 @@
 .contact {
   background-color: var(--main-color-beige);
   padding: 30px 10%;
+  max-width: 1400px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .title {
