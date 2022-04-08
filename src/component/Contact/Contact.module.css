@@ -31,6 +31,12 @@
   /* margin-bottom: 20px; */
 }
 
+.contact-gif {
+  margin-top: 70px;
+  margin-left: 50px;
+  height: 220px;
+}
+
 .contact-form {
   text-align: center;
 }
@@ -60,11 +66,12 @@
   margin: 20px;
   font-size: var(--font-size-sm);
   background-color: var(--message-button);
+  color: var(--main-color-mocha);
   border: none;
   letter-spacing: 1.5px;
-  font-weight: 600;
+  font-weight: 400;
 }
 
-.contact-button:hover{
-    cursor: pointer;
+.contact-button:hover {
+  cursor: pointer;
 }

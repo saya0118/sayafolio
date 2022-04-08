@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./Contact.module.css";
 import { db } from "./firebase";
+import contactGif from "../../image/contact.gif";
 
 export const Contact = () => {
   const [name, setName] = useState("");
@@ -44,6 +45,7 @@ export const Contact = () => {
           <a className={styles["contact-info"]}>chemi0802@gmail.com</a>
           <h2 className={styles["contact-title"]}>Phone</h2>
           <p className={styles["contact-info"]}>+1 7788725098</p>
+          <img src={contactGif} className={styles["contact-gif"]} />
         </div>
         <div
           className={`${styles["contact-form"]} ${styles["contact-flex-inner"]}`}
