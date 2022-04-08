@@ -2,6 +2,7 @@ import React from "react";
 import ProfileImage from "../../image/profile.png";
 import styles from "./Profile.module.css";
 import { Social } from "../Social";
+import { ResumeButton } from "../ResumeButton";
 
 export const Profile = () => {
   return (
@@ -33,6 +34,7 @@ export const Profile = () => {
             That's how I started to get in the world of programming.
           </p>
           <Social/>
+          <ResumeButton/>
         </div>
       </div>
     </div>
