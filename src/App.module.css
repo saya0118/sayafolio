@@ -17,12 +17,13 @@
   --font-size-lg: 25px;
   --font-size-md: 20px;
   --font-size-sm: 16px;
+  --max-width-first: 1440px;
+  --max-width-second: 1024px;
+  --max-width-third: 680px;
+  --max-width-fourth: 320px;
 
   margin: 0;
   padding: 0;
   font-family: "Exo 2", sans-serif;
   background-color: var(--main-color-beige);
-  max-width: 1400px;
-  margin-right: auto;
-  margin-left: auto;
 }
