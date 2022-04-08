@@ -1,84 +1,56 @@
-/* .work {
+.work {
+  height: auto;
+  padding: 30px 10%;
   min-height: 200vh;
   background-color: var(--main-color-beige);
-  text-align: center;
-}
-ul {
-  text-align: left;
-  list-style: none;
 }
 
-.project-content {
-  display: flex;
-  height: 50vh;
-  width: 100%;
-  justify-content: space-between;
-}
-
-.project-img {
-  width: 50%;
-
-  position: relative;
-  background-color: var(--main-color-yellow);
-}
-
-img {
-  width: 100%;
-  position: absolute;
-  opacity: 1;
-  transition: all 2s ease-in-out;
-  object-fit: contain;
-}
-.project-info {
-  width: 50%;
-  background-color: var(--main-color-beige);
-}
-
-p {
-  padding-left: 20px;
+.title{
+  font-size: var(--font-size-md-title);
   color: var(--main-color-charcoal);
-  line-height: 2em;
+  margin-bottom: 60px;
+}
+
+.project-ul{
+flex-direction: column;
+}
+
+.project-list{
   margin: 20px 0;
+  display: flex;
+  height: 330px;
 }
 
-h3 {
-  padding-left: 20px;
-  color: var(--main-color-charcoal);
-  font-size: var(--font-size-lg);
-}
-
-a {
-  text-align: center;
-  text-decoration: none;
-  width: 80px;
-  height: 25px;
-  margin-left: 20px;
-  border: 2px solid #fff;
-  position: relative;
-  display: inline-block;
-  color: #fff;
-}
-
-a:hover {
-  border: 2px solid var(--main-color-yellow);
-  color: var(--main-color-charcoal);
-  transition: 1s;
-}
-
-.project-content {
+.project-list:nth-child(even){
   flex-direction: row-reverse;
-  flex-wrap: nowrap;
-  animation: slideIn 1s;
+}
 
-  @keyframes slideIn {
-    0% {
-      opacity: 0;
-      transform: translateX(-200px);
-    }
+.project-img-box{
+  width: 50%;
+  box-sizing: border-box;
+}
 
-    100% {
-      opacity: 1;
-      transform: translateX(0px);
-    }
-  }
-} */
+.project-description-box{
+  padding-left: 30px;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.project-language{
+  font-size: var(--font-size-md);
+  margin-bottom: 15px;
+}
+
+.project-title{
+  font-size: var(--font-size-sm-title);
+  color: var(--main-color-charcoal);
+  margin-bottom: 15px;
+}
+
+.project-description{
+  margin-bottom: 15px;
+}
+
+.project-link{
+  margin-right: 10px;
+}
