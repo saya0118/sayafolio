@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./Social.module.css";
-import iconGithub from "../../image/github.svg";
-import iconLinkedin from "../../image/linkedin.svg";
-import iconMail from "../../image/gmail.svg";
+import iconGithub from "../../image/brown-github.svg";
+import iconLinkedin from "../../image/brown-linkedin.svg";
+import iconMail from "../../image/brown-mail.svg";
 
 export const Social = () => {
   return (
