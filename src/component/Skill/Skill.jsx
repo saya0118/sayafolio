@@ -17,6 +17,8 @@ import IconFigma from "../../image/figma.svg";
 import IconTailwind from "../../image/tailwind.svg";
 import IconFirebase from "../../image/firebase.svg";
 import IconMysql from "../../image/mysql.svg";
+import IconVite from '../../image/vitejs.svg';
+import IconEslint from '../../image/eslint.svg';
 
 export const Skill = () => {
   return (
@@ -81,6 +83,10 @@ export const Skill = () => {
               <h5 className={styles["skill-name"]}>MongoDB</h5>
             </div>
             <div className={styles["skill-item"]}>
+              <img className={styles.img} src={IconFirebase} />
+              <h5 className={styles["skill-name"]}>Firebase</h5>
+            </div>
+            <div className={styles["skill-item"]}>
               <img className={styles.img} src={IconMysql} />
               <h5 className={styles["skill-name"]}>MySQL</h5>
             </div>
@@ -91,6 +97,14 @@ export const Skill = () => {
             <div className={styles["skill-item"]}>
               <img className={styles.img} src={IconGithub} />
               <h5 className={styles["skill-name"]}>Github</h5>
+            </div>
+            <div className={styles["skill-item"]}>
+              <img className={styles.img} src={IconVite} />
+              <h5 className={styles["skill-name"]}>Vite</h5>
+            </div>
+            <div className={styles["skill-item"]}>
+              <img className={styles.img} src={IconEslint} />
+              <h5 className={styles["skill-name"]}>ESLint</h5>
             </div>
             <div className={styles["skill-item"]}>
               <img className={styles.img} src={IconFigma} />
