@@ -4,6 +4,7 @@ import svgLogo from "../../image/light-logo.svg";
 import flowerGif from "../../image/flower.gif";
 import { ToggleButton } from "../ToggleButton";
 import { Social } from "../Social";
+import { ResumeButton } from "../ResumeButton";
 
 export const Header = () => {
   return (
@@ -72,6 +73,7 @@ export const Header = () => {
             A Frontend Developer based in Vancouver.
           </p>
           <Social />
+          <ResumeButton/>
           <img src={flowerGif} className={styles.gif} />
         </div>
       </div>
