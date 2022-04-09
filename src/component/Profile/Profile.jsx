@@ -17,7 +17,7 @@ export const Profile = () => {
         </div>
         <div className={styles["profile-text"]}>
           <h1 className={styles["title"]}>About me</h1>
-          <p>
+          <p className={styles["profile-description"]}>
             Hi! I'm Saya.
             <br />
             I'm a React developer based in Vancouver. I was born in Seoul, South

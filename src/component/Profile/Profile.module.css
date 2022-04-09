@@ -1,8 +1,10 @@
 .profile {
-  height: 600px;
+  min-height: 100vh;
   background-color: var(--main-color-beige);
-  padding: 30px 10%;
   max-width: var(--max-width-first);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-right: auto;
   margin-left: auto;
 }
@@ -15,6 +17,7 @@
 .image {
   width: 50%;
   display: table-cell;
+  text-align: center;
 }
 
 .profile-image {
@@ -24,6 +27,7 @@
 .profile-text {
   display: table-cell;
   width: 50%;
+  padding-right: 40px;
 }
 
 .title {
@@ -33,7 +37,7 @@
   margin-bottom: 30px;
 }
 
-p {
+.profile-description {
   color: var(--main-color-charcoal);
   font-size: var(--font-size-sm);
   text-align: left;
@@ -41,25 +45,20 @@ p {
 }
 
 @media screen and (min-width: 767px) and (max-width: 930px) {
-  .profile {
-    height: auto;
-  }
-
-  .image {
-    width: 50%;
-    display: table-cell;
-  }
-
   .profile-image {
-    width: 90%;
+    width: 80%;
     box-shadow: -20px 20px 3px var(--main-color-yellow);
+  }
+
+  .container {
+    padding: 0 20px;
   }
 
   .title {
     font-size: var(--font-size-sm-title);
   }
 
-  p {
+  .profile-description {
     font-size: var(--font-size-ty);
   }
 }
@@ -72,6 +71,7 @@ p {
 
   .container {
     display: initial;
+    padding: 0 20px;
   }
 
   .image {
@@ -91,7 +91,7 @@ p {
     width: 100%;
   }
 
-  .profile-mobile{
+  .profile-mobile {
     display: flex;
     justify-content: center;
   }
@@ -101,7 +101,7 @@ p {
     text-align: center;
   }
 
-  p {
+  .profile-description {
     font-size: var(--font-size-ty);
     text-align: center;
   }
@@ -111,5 +111,12 @@ p {
   .title {
     font-size: var(--font-size-ty-title);
     margin-top: 20px;
+  }
+
+  .profile-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
   }
 }

@@ -42,10 +42,6 @@
 }
 
 @media screen and (max-width: 600px) {
-  .resume-button {
-    margin: 23px 0px;
-  }
-
   .resume-link {
     width: 70px;
     height: 25px;
