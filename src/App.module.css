@@ -12,15 +12,19 @@
   --main-color-gray: #959ca7;
   --message-button: rgb(161, 124, 76);
   --font-size-large-title: 70px;
+  --font-size-mid-title: 50px;
   --font-size-md-title: 60px;
   --font-size-sm-title: 40px;
+  --font-size-ty-title: 30px;
   --font-size-lg: 25px;
   --font-size-md: 20px;
   --font-size-sm: 16px;
+  --font-size-ty: 13px;
+  --font-size-10: 10px;
   --max-width-first: 1440px;
   --max-width-second: 1024px;
-  --max-width-third: 680px;
-  --max-width-fourth: 320px;
+  --max-width-third: 768px;
+  --max-width-fourth: 480px;
 
   margin: 0;
   padding: 0;

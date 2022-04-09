@@ -17,7 +17,7 @@ export const Profile = () => {
         </div>
         <div className={styles["profile-text"]}>
           <h1 className={styles["title"]}>About me</h1>
-          <p>
+          <p className={styles["profile-description"]}>
             Hi! I'm Saya.
             <br />
             I'm a React developer based in Vancouver. I was born in Seoul, South
@@ -33,8 +33,10 @@ export const Profile = () => {
             it good timing to change my career and jump into the unknown world?"
             That's how I started to get in the world of programming.
           </p>
-          <Social/>
-          <ResumeButton/>
+          <div className={styles['profile-mobile']}>
+            <Social />
+            <ResumeButton />
+          </div>
         </div>
       </div>
     </div>

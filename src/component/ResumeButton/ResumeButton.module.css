@@ -1,8 +1,8 @@
-.resume-button{
-margin: 10px 0px;
+.resume-button {
+  margin: 10px 0px;
 }
 
-.resume-link{
+.resume-link {
   display: block;
   width: 130px;
   height: 40px;
@@ -14,15 +14,15 @@ margin: 10px 0px;
   letter-spacing: 2px;
   text-align: center;
   position: relative;
-  transition: all .35s;
+  transition: all 0.35s;
 }
 
-.resume-link .resume-title{
+.resume-link .resume-title {
   position: relative;
   z-index: 2;
 }
 
-.resume-link:after{
+.resume-link:after {
   position: absolute;
   content: "";
   top: 0;
@@ -30,13 +30,28 @@ margin: 10px 0px;
   width: 0;
   height: 100%;
   background: var(--main-color-charcoal);
-  transition: all .35s;
+  transition: all 0.35s;
 }
 
-.resume-link:hover{
+.resume-link:hover {
   color: #fff;
 }
 
-.resume-link:hover:after{
+.resume-link:hover:after {
   width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .resume-link {
+    width: 70px;
+    height: 25px;
+    line-height: 27px;
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+
+  .resume-link .resume-title {
+    position: relative;
+    z-index: 2;
+  }
 }

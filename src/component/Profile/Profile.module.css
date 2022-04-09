@@ -1,8 +1,10 @@
 .profile {
-  height: 600px;
+  min-height: 100vh;
   background-color: var(--main-color-beige);
-  padding: 30px 10%;
   max-width: var(--max-width-first);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-right: auto;
   margin-left: auto;
 }
@@ -15,6 +17,7 @@
 .image {
   width: 50%;
   display: table-cell;
+  text-align: center;
 }
 
 .profile-image {
@@ -24,6 +27,7 @@
 .profile-text {
   display: table-cell;
   width: 50%;
+  padding-right: 40px;
 }
 
 .title {
@@ -33,9 +37,86 @@
   margin-bottom: 30px;
 }
 
-p {
+.profile-description {
   color: var(--main-color-charcoal);
   font-size: var(--font-size-sm);
   text-align: left;
   line-height: 1.5em;
+}
+
+@media screen and (min-width: 767px) and (max-width: 930px) {
+  .profile-image {
+    width: 80%;
+    box-shadow: -20px 20px 3px var(--main-color-yellow);
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  .title {
+    font-size: var(--font-size-sm-title);
+  }
+
+  .profile-description {
+    font-size: var(--font-size-ty);
+  }
+}
+
+@media screen and (max-width: 766px) {
+  .profile {
+    height: auto;
+    text-align: center;
+  }
+
+  .container {
+    display: initial;
+    padding: 0 20px;
+  }
+
+  .image {
+    width: 100%;
+    display: initial;
+  }
+
+  .profile-image {
+    margin-bottom: 20px;
+    width: 200px;
+    height: auto;
+    box-shadow: -20px 20px 3px var(--main-color-yellow);
+  }
+
+  .profile-text {
+    display: initial;
+    width: 100%;
+  }
+
+  .profile-mobile {
+    display: flex;
+    justify-content: center;
+  }
+
+  .title {
+    font-size: var(--font-size-sm-title);
+    text-align: center;
+  }
+
+  .profile-description {
+    font-size: var(--font-size-ty);
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: var(--font-size-ty-title);
+    margin-top: 20px;
+  }
+
+  .profile-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
 }

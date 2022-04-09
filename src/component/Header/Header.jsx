@@ -5,6 +5,7 @@ import flowerGif from "../../image/flower.gif";
 import { ToggleButton } from "../ToggleButton";
 import { Social } from "../Social";
 import { ResumeButton } from "../ResumeButton";
+import { Hamburger } from "../Hamburger";
 
 export const Header = () => {
   return (
@@ -24,57 +25,62 @@ export const Header = () => {
           </ul>
         </div>
         <div className={styles["nav-right"]}>
+          <div className={styles["hamburger-menu"]}>
+            <Hamburger />
+          </div>
           <ul className={styles["w-lo"]}>
             <li>
-              <a>Home</a>
+              <a className={styles["header-list"]}>Home</a>
             </li>
             <li>
-              <a>About</a>
+              <a className={styles["header-list"]}>About</a>
             </li>
             <li>
-              <a>Projects</a>
+              <a className={styles["header-list"]}>Projects</a>
             </li>
             <li>
-              <a>Skills</a>
+              <a className={styles["header-list"]}>Skills</a>
             </li>
             <li>
-              <a>Contact</a>
+              <a className={styles["header-list"]}>Contact</a>
             </li>
           </ul>
         </div>
       </div>
       <div className={styles["greeting-container"]}>
         <div className={styles["greeting"]}>
-          <div className={styles["animation-container"]}>
-            <h2 className={styles["greeting-title"]}>
-              <span
-                className={`${styles["title-word"]} ${styles["title-word-1"]}`}
-              >
-                Hello{" "}
-              </span>
-              <span
-                className={`${styles["title-word"]} ${styles["title-word-2"]}`}
-              >
-                World!{" "}
-              </span>
-              <span
-                className={`${styles["title-word"]} ${styles["title-word-3"]}`}
-              >
-                I'm{" "}
-              </span>
-              <span
-                className={`${styles["title-word"]} ${styles["title-word-4"]}`}
-              >
-                Saya.
-              </span>
-            </h2>
-          </div>
+          <h2 className={styles["greeting-title"]}>
+            <span
+              className={`${styles["title-word"]} ${styles["title-word-1"]}`}
+            >
+              Hello{" "}
+            </span>
+            <span
+              className={`${styles["title-word"]} ${styles["title-word-2"]}`}
+            >
+              World!{" "}
+            </span>
+            <span
+              className={`${styles["title-word"]} ${styles["title-word-3"]}`}
+            >
+              I'm{" "}
+            </span>
+            <span
+              className={`${styles["title-word"]} ${styles["title-word-4"]}`}
+            >
+              Saya.
+            </span>
+          </h2>
           <p className={styles["greeting-description"]}>
             A Frontend Developer based in Vancouver.
           </p>
-          <Social />
-          <ResumeButton/>
-          <img src={flowerGif} className={styles.gif} />
+          <div className={styles["mobile-centre"]}>
+            <Social />
+            <ResumeButton />
+          </div>
+          <div className={styles["gif-container"]}>
+            <img src={flowerGif} className={styles.gif} />
+          </div>
         </div>
       </div>
     </div>
