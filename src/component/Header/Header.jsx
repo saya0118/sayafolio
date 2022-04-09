@@ -5,6 +5,7 @@ import flowerGif from "../../image/flower.gif";
 import { ToggleButton } from "../ToggleButton";
 import { Social } from "../Social";
 import { ResumeButton } from "../ResumeButton";
+import { Hamburger } from "../Hamburger";
 
 export const Header = () => {
   return (
@@ -24,6 +25,9 @@ export const Header = () => {
           </ul>
         </div>
         <div className={styles["nav-right"]}>
+          <div className={styles["hamburger-menu"]}>
+            <Hamburger />
+          </div>
           <ul className={styles["w-lo"]}>
             <li>
               <a>Home</a>
@@ -72,7 +76,7 @@ export const Header = () => {
           <p className={styles["greeting-description"]}>
             A Frontend Developer based in Vancouver.
           </p>
-          <div className={styles['mobile-centre']}>
+          <div className={styles["mobile-centre"]}>
             <Social />
             <ResumeButton />
           </div>

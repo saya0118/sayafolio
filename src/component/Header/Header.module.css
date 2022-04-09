@@ -11,6 +11,7 @@
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid var(--main-color-gray);
+  align-items: center;
 }
 
 .nav-right {
@@ -205,6 +206,11 @@ a:hover {
     height: 50px;
   }
 
+  .nav-right {
+    display: initial;
+    width: 50px;
+  }
+
   .w-sh {
     width: 250px;
   }
@@ -260,6 +266,13 @@ a:hover {
 
   .nav-bar {
     height: 50px;
+  }
+
+  .nav-right {
+    align-items: center;
+    display: initial;
+    width: 50px;
+    align-items: center;
   }
 
   .w-sh {
