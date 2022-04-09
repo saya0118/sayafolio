@@ -15,27 +15,30 @@ export const Social = () => {
               src={iconLinkedin}
               alt="linked in"
             />
-            <a
-              className={styles["social-link"]}
-              href=""
-            />
+            <a className={styles["social-link"]} href="" />
           </button>
         </li>
         <li className={styles["social-list"]}>
-          <button className={styles["social-button"]}>
-            <img
-              className={styles["social-img"]}
-              src={iconGithub}
-              alt="github"
-            />
-            <a className={styles["social-link"]} href="https://github.com/saya0118"></a>
-          </button>
+          <a target="_blank" href="https://github.com/saya0118">
+            <button className={styles["social-button"]}>
+              <img
+                className={styles["social-img"]}
+                src={iconGithub}
+                alt="github"
+              />
+            </button>
+          </a>
         </li>
         <li className={styles["social-list"]}>
-          <button className={styles["social-button"]}>
-            <img className={styles["social-img"]} src={iconMail} alt="gmail" />
-            <a className={styles["social-link"]} href="chemi0802@gmail.com" />
-          </button>
+          <a target="_blank" onClick={() => window.location = 'mailto:chemi0802@gmail.com'}>
+            <button className={styles["social-button"]} type="button">
+              <img
+                className={styles["social-img"]}
+                src={iconMail}
+                alt="gmail"
+              />
+            </button>
+          </a>
         </li>
       </ul>
     </div>
