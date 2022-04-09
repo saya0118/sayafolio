@@ -1,6 +1,6 @@
 .toggle-button {
-  width: 70px;
-  height: 25px;
+  width: 45px;
+  height: 20px;
 }
 
 .toggle-input {
@@ -17,8 +17,8 @@
 }
 
 .toggle-label {
-  width: 45px;
-  height: 25px;
+  width: 40px;
+  height: 20px;
   background-color: var(--main-color-charcoal);
   position: relative;
   display: inline-block;
@@ -30,8 +30,8 @@
 .toggle-label:after {
   content: "";
   position: absolute;
-  width: 27px;
-  height: 27px;
+  width: 23px;
+  height: 23px;
   border-radius: 100%;
   left: -1px;
   top: -1px;
@@ -41,10 +41,10 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 780px) {
   .toggle-button {
-    width: 70px;
-    height: 25px;
+    width: 33px;
+    height: 18px;
   }
 
   .toggle-input:checked + .toggle-label:after {
@@ -52,12 +52,12 @@
   }
 
   .toggle-label {
-    width: 35px;
-    height: 20px;
+    width: 33px;
+    height: 18px;
   }
 
   .toggle-label:after {
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
   }
 }
