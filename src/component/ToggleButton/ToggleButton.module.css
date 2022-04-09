@@ -30,11 +30,11 @@
 .toggle-label:after{
     content: '';
     position: absolute;
-    width: 26px;
-    height: 26px;
+    width: 27px;
+    height: 27px;
     border-radius: 100%;
     left: -1px;
-    top: -0.5px;
+    top: -1px;
     background-color: var(--main-color-yellow);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     transition: 0.4s;
