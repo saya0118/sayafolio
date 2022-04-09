@@ -4,7 +4,7 @@
   max-width: var(--max-width-first);
   margin-right: auto;
   margin-left: auto;
-  padding: 30px 10%;
+  padding: 0px 10%;
 }
 
 .nav-bar {
@@ -20,7 +20,7 @@
   display: flex;
 }
 
-ul {
+.ul-flex {
   display: flex;
   align-items: center;
   padding: 0;
@@ -55,10 +55,6 @@ li {
   text-underline-offset: 5px;
   text-decoration-color: var(--main-color-yellow);
   text-decoration-style: dashed;
-  cursor: pointer;
-}
-
-a:hover {
   cursor: pointer;
 }
 
@@ -177,7 +173,7 @@ a:hover {
 @media screen and (min-width: 768px) and (max-width: 1099px) {
   .header {
     max-width: var(--max-width-third);
-    padding: 30px 20px;
+    padding: 0px 20px;
   }
 
   .gif-container {
@@ -193,7 +189,7 @@ a:hover {
 @media screen and (min-width: 601px) and (max-width: 767px) {
   .header {
     max-width: 100%;
-    padding: 30px 20px;
+    padding: 0px 20px;
   }
 
   .nav-bar {
@@ -206,7 +202,7 @@ a:hover {
   }
 
   .w-sh {
-    width: 250px;
+    width: 230px;
   }
 
   .w-lo {
@@ -251,7 +247,7 @@ a:hover {
 
 @media screen and (max-width: 600px) {
   .header {
-    padding: 30px 20px;
+    padding: 0px 20px;
     max-width: initial;
   }
 
@@ -275,7 +271,7 @@ a:hover {
   }
 
   .w-sh {
-    width: 250px;
+    width: 200px;
   }
 
   .w-lo {
