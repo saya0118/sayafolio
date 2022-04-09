@@ -72,8 +72,10 @@ export const Header = () => {
           <p className={styles["greeting-description"]}>
             A Frontend Developer based in Vancouver.
           </p>
-          <Social />
-          <ResumeButton/>
+          <div className={styles['mobile-centre']}>
+            <Social />
+            <ResumeButton />
+          </div>
           <img src={flowerGif} className={styles.gif} />
         </div>
       </div>

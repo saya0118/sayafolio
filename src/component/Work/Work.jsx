@@ -39,7 +39,7 @@ export const Work = () => {
                 aspernatur? Aliquam iusto eveniet ea enim voluptatum praesentium
                 reprehenderit cumque quidem.
               </p>
-              <div>
+              <div className={styles['link-container']}>
                 <a href="" className={styles["project-link"]}>
                   LIVE
                 </a>
@@ -68,7 +68,7 @@ export const Work = () => {
                 aspernatur? Aliquam iusto eveniet ea enim voluptatum praesentium
                 reprehenderit cumque quidem.
               </p>
-              <div>
+              <div className={styles['link-container']}>
                 <a href="" className={styles["project-link"]}>
                   LIVE
                 </a>
@@ -97,7 +97,7 @@ export const Work = () => {
                 aspernatur? Aliquam iusto eveniet ea enim voluptatum praesentium
                 reprehenderit cumque quidem.
               </p>
-              <div>
+              <div className={styles['link-container']}>
                 <a href="" className={styles["project-link"]}>
                   LIVE
                 </a>
@@ -126,7 +126,7 @@ export const Work = () => {
                 aspernatur? Aliquam iusto eveniet ea enim voluptatum praesentium
                 reprehenderit cumque quidem.
               </p>
-              <div>
+              <div className={styles['link-container']}>
                 <a href="" className={styles["project-link"]}>
                   LIVE
                 </a>

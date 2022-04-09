@@ -47,3 +47,108 @@
   padding: 10px 10px;
   text-align: center;
 }
+
+@media screen and (max-width: 930px) {
+  .skill {
+    height: 550px;
+    padding: 30px 10%;
+    max-width: var(--max-width-first);
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .title {
+    font-size: var(--font-size-sm-title);
+  }
+ 
+  .skill-section {
+    width: 600px;
+  }
+  
+  .skill-title {
+    font-size: var(--font-size-sm);
+  }
+  
+  .skill-flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .skill-item {
+    margin-right: 15px;
+    text-align: center;
+  }
+  
+  .img {
+    width: 30px;
+  }
+  
+  .skill-name {
+    padding: 5px 5px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .skill {
+    height: auto;
+    padding: 30px 10%;
+    max-width: var(--max-width-first);
+    margin-right: auto;
+    margin-left: auto;
+  }
+ 
+  .skill-section {
+    padding: 10px 10px;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+    border: 2px dashed var(--main-color-yellow);
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .flex {
+    display: initial;
+  }
+  
+  .skill-title {
+    text-align: center;
+    font-size: var(--font-size-sm);
+  }
+  
+  .skill-flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .skill-item {
+    margin-right: 10px;
+    text-align: center;
+  }
+  
+  .img {
+    width: 30px;
+  }
+  
+  .skill-name {
+    padding: 5px 5px;
+    text-align: center;
+    font-size: var(--font-size-10)
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: var(--font-size-ty-title);
+    margin-top: 30px;
+  margin-bottom: 30px;
+  }
+}

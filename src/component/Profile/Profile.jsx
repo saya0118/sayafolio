@@ -33,8 +33,10 @@ export const Profile = () => {
             it good timing to change my career and jump into the unknown world?"
             That's how I started to get in the world of programming.
           </p>
-          <Social/>
-          <ResumeButton/>
+          <div className={styles['profile-mobile']}>
+            <Social />
+            <ResumeButton />
+          </div>
         </div>
       </div>
     </div>
