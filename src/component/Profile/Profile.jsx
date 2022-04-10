@@ -2,9 +2,11 @@ import React from "react";
 import ProfileImage from "../../image/profile.png";
 import styles from "./Profile.module.css";
 import { Social } from "../Social";
-import { ResumeButton } from "../ResumeButton";
+import { Button } from "../Button";
+import { useColor } from "../Context/Context";
 
 export const Profile = () => {
+  const darkMode = useColor();
   return (
     <div className={styles.profile}>
       <div className={styles.container}>
@@ -16,7 +18,9 @@ export const Profile = () => {
           />
         </div>
         <div className={styles["profile-text"]}>
-          <h1 className={styles["title"]}>About me</h1>
+          <h1 className={`${styles["title"]} ${darkMode
+                  ? styles["title-name-dark"]
+                  :''}`}>About me</h1>
           <p className={styles["profile-description"]}>
             Hi! I'm Saya.
             <br />
@@ -35,7 +39,7 @@ export const Profile = () => {
           </p>
           <div className={styles['profile-mobile']}>
             <Social />
-            <ResumeButton />
+            <Button text="Resume"/>
           </div>
         </div>
       </div>

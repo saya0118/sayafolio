@@ -1,16 +1,56 @@
 .skill {
   height: 550px;
   padding: 30px 10%;
+  margin-bottom: 50px;
   max-width: var(--max-width-first);
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .title {
   font-size: var(--font-size-md-title);
   text-align: initial;
   margin-top: 30px;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
+}
+
+.title-name-dark {
+  animation: flickering 5s infinite;
+  text-shadow: 0 0 1px #fff, 0 0 20px rgb(201, 204, 0), 0 0 10px rgb(204, 201, 0), 0 0 10px rgb(255, 217, 0), 0 0 60px rgb(179, 255, 0);
+}
+
+@keyframes flickering {
+  0% {
+    border-color: transparent;
+    opacity: 0.2;
+  }
+
+  2% {
+    opacity: 1;
+  }
+
+  4% {
+    border-color: transparent;
+    opacity: 0.2;
+  }
+
+  8% {
+    opacity: 1;
+  }
+
+  28% {
+    opacity: 1;
+  }
+
+  30% {
+    opacity: 0.2;
+  }
+
+  36% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .flex {
@@ -53,7 +93,7 @@
 @media screen and (max-width: 930px) {
   .skill {
     height: 550px;
-    padding: 30px 10%;
+    padding: 30px 20px;
     max-width: var(--max-width-first);
     margin-right: auto;
     margin-left: auto;

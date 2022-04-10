@@ -3,10 +3,11 @@ import styles from "./Header.module.css";
 import lightLogo from "../../image/light-logo.svg";
 import darkLogo from "../../image/dark-logo.svg";
 import flowerGif from "../../image/flower.gif";
+import techImg from "../../image/tech.svg";
 import { useColor } from "../Context/Context";
 import { ToggleButton } from "../ToggleButton";
 import { Social } from "../Social";
-import { ResumeButton } from "../ResumeButton";
+import { Button } from "../Button";
 import { Hamburger } from "../Hamburger";
 import { SlidePage } from "../SlidePage";
 
@@ -60,22 +61,38 @@ export const Header = () => {
         <div className={styles["greeting"]}>
           <h2 className={styles["greeting-title"]}>
             <span
-              className={`${styles["title-word"]} ${styles["title-word-1"]}`}
+              className={
+                darkMode
+                  ? styles["title-word-dark"]
+                  : `${styles["title-word"]} ${styles["title-word-1"]}`
+              }
             >
               Hello{" "}
             </span>
             <span
-              className={`${styles["title-word"]} ${styles["title-word-2"]}`}
+              className={
+                darkMode
+                  ? styles["title-word-dark"]
+                  : `${styles["title-word"]} ${styles["title-word-2"]}`
+              }
             >
               World!{" "}
             </span>
             <span
-              className={`${styles["title-word"]} ${styles["title-word-3"]}`}
+              className={
+                darkMode
+                  ? styles["title-word-dark"]
+                  : `${styles["title-word"]} ${styles["title-word-3"]}`
+              }
             >
               I'm{" "}
             </span>
             <span
-              className={`${styles["title-word"]} ${styles["title-word-4"]}`}
+              className={
+                darkMode
+                  ? styles["title-name-dark"]
+                  : `${styles["title-word"]} ${styles["title-word-4"]}`
+              }
             >
               Saya.
             </span>
@@ -85,10 +102,13 @@ export const Header = () => {
           </p>
           <div className={styles["mobile-centre"]}>
             <Social />
-            <ResumeButton />
+            <Button text="Resume"/>
           </div>
           <div className={styles["gif-container"]}>
-            <img src={flowerGif} className={styles.gif} />
+            <img
+              src={darkMode ? techImg : flowerGif}
+              className={darkMode ? styles["dark-img"] : styles.gif}
+            />
           </div>
         </div>
       </div>

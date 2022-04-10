@@ -1,15 +1,18 @@
 import React, { useState } from "react";
 import styles from "./Contact.module.css";
+import { useColor } from "../Context/Context";
 import { Social } from "../Social";
 import { db } from "./firebase";
 import contactGif from "../../image/contact.gif";
-import { ResumeButton } from "../ResumeButton";
+import imgMoon from "../../image/moon.svg";
+import { Button } from "../Button";
 
 export const Contact = () => {
+  const darkMode = useColor();
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-
   const [loader, setLoader] = useState(false);
 
   const handleSubmit = (e) => {
@@ -38,10 +41,19 @@ export const Contact = () => {
 
   return (
     <div className={styles.contact}>
-      <h1 className={styles.title}>Say Hello</h1>
+      <h1
+        className={`${styles["title"]} ${
+          darkMode ? styles["title-name-dark"] : ""
+        }`}
+      >
+        Say Hello
+      </h1>
       <div className={styles["contact-flex"]}>
         <div className={styles["contact-flex-inner"]}>
-          <img src={contactGif} className={styles["contact-gif"]} />
+          <img
+            src={darkMode ? imgMoon : contactGif}
+            className={darkMode ? styles["dark-img"] : styles["contact-gif"]}
+          />
         </div>
         <div
           className={`${styles["contact-detail"]} ${styles["contact-flex-inner"]}`}
@@ -51,7 +63,7 @@ export const Contact = () => {
           <h2 className={styles["contact-title"]}>Phone</h2>
           <p className={styles["contact-info"]}>+1 7788725098</p>
           <Social />
-          <ResumeButton />
+          <Button text="Resume" />
         </div>
         <div
           className={`${styles["contact-form"]} ${styles["contact-flex-inner"]}`}

@@ -1,9 +1,16 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Work.module.css";
+import { useColor } from "../Context/Context";
 
 export const Work = () => {
-  const [isVisible, setIsVisible] = useState(false);
+  const darkMode = useColor();
 
+  const [isVisible, setIsVisible] = useState(false);
+  const themeStyle = {
+    backgroundColor: darkMode
+      ? "var(--dark-bg-color)"
+      : "var(--main-color-mocha)",
+  };
   const toggleVisibility = () => {
     window.scrollY > -50 ? setIsVisible(true) : setIsVisible(false);
   };
@@ -14,10 +21,16 @@ export const Work = () => {
   }, []);
 
   return (
-    <div className={styles.work}>
-      <div className={styles['work-container']}>
+    <div style={themeStyle} className={styles.work}>
+      <div className={styles["work-container"]}>
         <div className={styles["section-title"]}>
-          <h1 className={styles["title"]}>WORKS</h1>
+          <h1
+            className={`${styles["title"]} ${
+              darkMode ? styles["title-name-dark"] : ""
+            }`}
+          >
+            Works
+          </h1>
         </div>
         <ul className={styles["project-ul"]}>
           <li
@@ -39,11 +52,21 @@ export const Work = () => {
                 aspernatur? Aliquam iusto eveniet ea enim voluptatum praesentium
                 reprehenderit cumque quidem.
               </p>
-              <div className={styles['link-container']}>
-                <a href="" className={styles["project-link"]}>
+              <div className={styles["link-container"]}>
+                <a
+                  href=""
+                  className={`${styles["project-link"]} ${
+                    darkMode ? styles["dark-link"] : styles["light-link"]
+                  }`}
+                >
                   LIVE
                 </a>
-                <a href="" className={styles["project-link"]}>
+                <a
+                  href=""
+                  className={`${styles["project-link"]} ${
+                    darkMode ? styles["dark-link"] : styles["light-link"]
+                  }`}
+                >
                   CODE
                 </a>
               </div>
@@ -68,11 +91,21 @@ export const Work = () => {
                 aspernatur? Aliquam iusto eveniet ea enim voluptatum praesentium
                 reprehenderit cumque quidem.
               </p>
-              <div className={styles['link-container']}>
-                <a href="" className={styles["project-link"]}>
+              <div className={styles["link-container"]}>
+                <a
+                  href=""
+                  className={`${styles["project-link"]} ${
+                    darkMode ? styles["dark-link"] : styles["light-link"]
+                  }`}
+                >
                   LIVE
                 </a>
-                <a href="" className={styles["project-link"]}>
+                <a
+                  href=""
+                  className={`${styles["project-link"]} ${
+                    darkMode ? styles["dark-link"] : styles["light-link"]
+                  }`}
+                >
                   CODE
                 </a>
               </div>
@@ -97,11 +130,21 @@ export const Work = () => {
                 aspernatur? Aliquam iusto eveniet ea enim voluptatum praesentium
                 reprehenderit cumque quidem.
               </p>
-              <div className={styles['link-container']}>
-                <a href="" className={styles["project-link"]}>
+              <div className={styles["link-container"]}>
+                <a
+                  href=""
+                  className={`${styles["project-link"]} ${
+                    darkMode ? styles["dark-link"] : styles["light-link"]
+                  }`}
+                >
                   LIVE
                 </a>
-                <a href="" className={styles["project-link"]}>
+                <a
+                  href=""
+                  className={`${styles["project-link"]} ${
+                    darkMode ? styles["dark-link"] : styles["light-link"]
+                  }`}
+                >
                   CODE
                 </a>
               </div>
@@ -126,11 +169,21 @@ export const Work = () => {
                 aspernatur? Aliquam iusto eveniet ea enim voluptatum praesentium
                 reprehenderit cumque quidem.
               </p>
-              <div className={styles['link-container']}>
-                <a href="" className={styles["project-link"]}>
+              <div className={styles["link-container"]}>
+                <a
+                  href=""
+                  className={`${styles["project-link"]} ${
+                    darkMode ? styles["dark-link"] : styles["light-link"]
+                  }`}
+                >
                   LIVE
                 </a>
-                <a href="" className={styles["project-link"]}>
+                <a
+                  href=""
+                  className={`${styles["project-link"]} ${
+                    darkMode ? styles["dark-link"] : styles["light-link"]
+                  }`}
+                >
                   CODE
                 </a>
               </div>
