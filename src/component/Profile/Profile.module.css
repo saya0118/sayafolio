@@ -1,6 +1,5 @@
 .profile {
   min-height: 100vh;
-  background-color: var(--main-color-beige);
   max-width: var(--max-width-first);
   display: flex;
   justify-content: center;
@@ -32,13 +31,11 @@
 
 .title {
   font-size: var(--font-size-md-title);
-  color: var(--main-color-charcoal);
   text-align: initial;
   margin-bottom: 30px;
 }
 
 .profile-description {
-  color: var(--main-color-charcoal);
   font-size: var(--font-size-sm);
   text-align: left;
   line-height: 1.5em;
