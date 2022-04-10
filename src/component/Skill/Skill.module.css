@@ -14,7 +14,9 @@
 
 .title-name-dark {
   animation: flickering 5s infinite;
-  text-shadow: 0 0 1px #fff, 0 0 20px rgb(201, 204, 0), 0 0 10px rgb(204, 201, 0), 0 0 10px rgb(255, 217, 0), 0 0 60px rgb(179, 255, 0);
+  text-shadow: 0 0 1px #fff, 0 0 20px rgb(201, 204, 0),
+    0 0 10px rgb(204, 201, 0), 0 0 10px rgb(255, 217, 0),
+    0 0 60px rgb(179, 255, 0);
 }
 
 @keyframes flickering {
@@ -61,6 +63,15 @@
   padding: 10px 10px;
   margin: 0 10px;
   margin-bottom: 30px;
+}
+
+.section-dark {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(255, 255, 255), 0 0 10px rgb(255, 255, 255),
+    0 0 10px rgb(231, 216, 165), 0 0 40px rgb(228, 224, 192);
+}
+
+.section-light {
   border: 2px dashed var(--main-color-yellow);
 }
 
