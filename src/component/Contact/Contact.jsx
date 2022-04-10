@@ -63,7 +63,7 @@ export const Contact = () => {
           <h2 className={styles["contact-title"]}>Phone</h2>
           <p className={styles["contact-info"]}>+1 7788725098</p>
           <Social />
-          <Button text="Resume" />
+          <Button text="Resume" size="normal" href="#"/>
         </div>
         <div
           className={`${styles["contact-form"]} ${styles["contact-flex-inner"]}`}
