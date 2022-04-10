@@ -2,12 +2,31 @@
   margin: 10px 0px;
 }
 
-.resume-link {
-  display: block;
+.normal{
   width: 130px;
   height: 40px;
-  line-height: 40px;
   font-size: 18px;
+  line-height: 40px;
+}
+
+.small{
+  width: 50px;
+  height: 28px;
+  font-size: 14px;
+  line-height: 29px;
+}
+
+.large{
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  height: 40px;
+  font-size: var(--font-size-sm);
+  line-height: 38px;
+}
+
+.resume-link {
+  display: block;
   text-decoration: none;
   letter-spacing: 2px;
   text-align: center;
@@ -72,5 +91,27 @@
   .resume-link .resume-title {
     position: relative;
     z-index: 2;
+  }
+
+  .normal{
+    width: 70px;
+    height: 25px;
+    line-height: 27px;
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+  
+  .small{
+    width: 33px;
+    height: 20px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .large {
+    width: 80%;
+    height: 30px;
+    font-size: var(--font-size-ty);
+    line-height: 30px;
   }
 }
