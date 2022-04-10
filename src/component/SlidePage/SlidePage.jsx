@@ -1,14 +1,17 @@
 import React from "react";
 import styles from "./SlidePage.module.css";
-import { useHamburger, useToggleHamburger } from "../Context/Context";
+import { useHamburger } from "../Context/Context";
+import { useColor } from "../Context/Context";
 
 export const SlidePage = () => {
   const openHamburger = useHamburger();
+  const darkMode = useColor();
   return (
     <div
-      className={`${styles["slide-page"]} ${openHamburger ? styles.open : ""}`}
+      className={`${styles["slide-page"]} ${openHamburger ? styles.open : ""} ${
+        darkMode ? styles["dark-slide-page"] : styles["light-slide-page"]
+      }`}
     >
-      {console.log(openHamburger)}
       <ul className={styles["items-ul"]}>
         <li className={styles["items-list"]}>
           <a className={styles["items-link"]}>Home</a>
