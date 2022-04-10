@@ -20,13 +20,16 @@ export const Social = () => {
     <div className={styles.social}>
       <ul className={styles["social-ul"]}>
         <li className={styles["social-list"]}>
+          <a
+            className={styles["social-link"]}
+            href="https://www.linkedin.com/in/sayaka-matsuda-659338211/"
+          />
           <button style={themeStyles} className={styles["social-button"]}>
             <img
               className={styles["social-img"]}
               src={darkMode ? darkLinkedin : iconLinkedin}
               alt="linked in"
             />
-            <a className={styles["social-link"]} href="" />
           </button>
         </li>
         <li className={styles["social-list"]}>
