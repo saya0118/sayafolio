@@ -102,7 +102,7 @@ export const Header = () => {
           </p>
           <div className={styles["mobile-centre"]}>
             <Social />
-            <Button size="normal" text="Resume" href="#"/>
+            <Button size="normal" text="Resume" href="#" />
           </div>
           <div className={styles["gif-container"]}>
             <img

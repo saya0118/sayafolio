@@ -24,7 +24,8 @@
 }
 
 .profile-dark {
-  box-shadow: 0 0 20px rgb(255, 255, 255), 0 0 10px rgb(255, 255, 255), 0 0 10px rgb(231, 216, 165), 0 0 60px rgb(228, 224, 192);
+  box-shadow: 0 0 20px rgb(255, 255, 255), 0 0 10px rgb(255, 255, 255),
+    0 0 10px rgb(231, 216, 165), 0 0 60px rgb(228, 224, 192);
 }
 
 .profile-text {
@@ -41,7 +42,9 @@
 
 .title-name-dark {
   animation: flickering 5s infinite;
-  text-shadow: 0 0 1px #fff, 0 0 20px rgb(201, 204, 0), 0 0 10px rgb(204, 201, 0), 0 0 10px rgb(255, 217, 0), 0 0 60px rgb(179, 255, 0);
+  text-shadow: 0 0 1px #fff, 0 0 20px rgb(201, 204, 0),
+    0 0 10px rgb(204, 201, 0), 0 0 10px rgb(255, 217, 0),
+    0 0 60px rgb(179, 255, 0);
 }
 
 @keyframes flickering {
@@ -92,7 +95,7 @@
     box-shadow: -20px 20px 3px var(--main-color-yellow);
   }
 
-  .profile-dark{
+  .profile-dark {
     width: 80%;
   }
 
@@ -132,7 +135,7 @@
     box-shadow: -20px 20px 3px var(--main-color-yellow);
   }
 
-  .profile-dark{
+  .profile-dark {
     margin-bottom: 20px;
     width: 70%;
   }

@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Button.module.css";
 import { useColor } from "../Context/Context";
 
-export const Button = ({text, href, size}) => {
+export const Button = ({ text, href, size }) => {
   const darkMode = useColor();
   return (
     <div className={styles["resume-button"]}>

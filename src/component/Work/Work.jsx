@@ -54,8 +54,8 @@ export const Work = () => {
                 reprehenderit cumque quidem.
               </p>
               <div className={styles["link-container"]}>
-                <Button size="small" text="LIVE" href="#"/>
-                <Button size="small" text="Code" href="#"/>    
+                <Button size="small" text="LIVE" href="#" />
+                <Button size="small" text="Code" href="#" />
               </div>
             </div>
           </li>
@@ -79,8 +79,8 @@ export const Work = () => {
                 reprehenderit cumque quidem.
               </p>
               <div className={styles["link-container"]}>
-              <Button size="small" text="LIVE" href="#"/>
-                <Button size="small" text="Code" href="#"/> 
+                <Button size="small" text="LIVE" href="#" />
+                <Button size="small" text="Code" href="#" />
               </div>
             </div>
           </li>
@@ -104,8 +104,8 @@ export const Work = () => {
                 reprehenderit cumque quidem.
               </p>
               <div className={styles["link-container"]}>
-              <Button size="small" text="LIVE" href="#"/>
-                <Button size="small" text="Code" href="#"/> 
+                <Button size="small" text="LIVE" href="#" />
+                <Button size="small" text="Code" href="#" />
               </div>
             </div>
           </li>
@@ -129,8 +129,8 @@ export const Work = () => {
                 reprehenderit cumque quidem.
               </p>
               <div className={styles["link-container"]}>
-              <Button size="small" text="LIVE" href="#"/>
-                <Button size="small" text="Code" href="#"/> 
+                <Button size="small" text="LIVE" href="#" />
+                <Button size="small" text="Code" href="#" />
               </div>
             </div>
           </li>
