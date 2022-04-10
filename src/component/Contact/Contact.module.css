@@ -1,5 +1,4 @@
 .contact {
-  background-color: var(--main-color-beige);
   padding: 30px 10%;
   max-width: 1400px;
   margin-right: auto;
@@ -8,7 +7,6 @@
 
 .title {
   font-size: var(--font-size-md-title);
-  color: var(--main-color-charcoal);
   text-align: initial;
   margin-top: 30px;
 }
