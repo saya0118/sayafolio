@@ -14,19 +14,49 @@ export const SlidePage = () => {
     >
       <ul className={styles["items-ul"]}>
         <li className={styles["items-list"]}>
-          <a className={styles["items-link"]}>Home</a>
+          <a
+            className={
+              darkMode ? styles["underline-dark"] : styles["underline-light"]
+            }
+          >
+            Home
+          </a>
         </li>
         <li className={styles["items-list"]}>
-          <a className={styles["items-link"]}>About</a>
+          <a
+            className={
+              darkMode ? styles["underline-dark"] : styles["underline-light"]
+            }
+          >
+            About
+          </a>
         </li>
         <li className={styles["items-list"]}>
-          <a className={styles["items-link"]}>Projects</a>
+          <a
+            className={
+              darkMode ? styles["underline-dark"] : styles["underline-light"]
+            }
+          >
+            Projects
+          </a>
         </li>
         <li className={styles["items-list"]}>
-          <a className={styles["items-link"]}>Skills</a>
+          <a
+            className={
+              darkMode ? styles["underline-dark"] : styles["underline-light"]
+            }
+          >
+            Skills
+          </a>
         </li>
         <li className={styles["items-list"]}>
-          <a className={styles["items-link"]}>Contact</a>
+          <a
+            className={
+              darkMode ? styles["underline-dark"] : styles["underline-light"]
+            }
+          >
+            Contact
+          </a>
         </li>
       </ul>
     </div>

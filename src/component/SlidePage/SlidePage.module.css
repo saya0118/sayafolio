@@ -37,11 +37,18 @@
     margin: 20px 0;
   }
 
-  .items-list:hover {
+  .underline-light:hover {
     text-decoration-color: var(--main-color-yellow);
     text-decoration: underline;
     text-underline-offset: 5px;
     text-decoration-style: dashed;
+    cursor: pointer;
+  }
+
+  .underline-dark:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-color: var(--main-color-yellow);
     cursor: pointer;
   }
 }
