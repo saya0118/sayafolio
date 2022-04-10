@@ -138,7 +138,7 @@ export const Header = () => {
             </span>
           </h2>
           <p className={styles["greeting-description"]}>
-            A Frontend Developer based in Vancouver.
+            A Creative Frontend Developer based in Vancouver.
           </p>
           <div className={styles["mobile-centre"]}>
             <Social />
