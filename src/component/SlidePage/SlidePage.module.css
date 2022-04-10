@@ -5,12 +5,13 @@
 @media screen and (max-width: 767px) {
   .slide-page {
     display: initial;
-    width: 40%;
-    height: 300px;
+    width: 45%;
+    height: 320px;
     position: fixed;
     right: -100%;
     transition: 0.3s ease-in-out;
     box-shadow: -0.2px 2px 3px var(--shadow-gray);
+    z-index: 2;
   }
 
   .dark-slide-page{

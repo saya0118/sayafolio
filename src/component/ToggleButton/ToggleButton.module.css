@@ -12,7 +12,7 @@
 }
 
 .toggle-input:checked + .toggle-label:after {
-  left: 20px;
+  left: 17px;
   content: "";
 }
 
@@ -48,7 +48,7 @@
   }
 
   .toggle-input:checked + .toggle-label:after {
-    left: 15px;
+    left: 13px;
   }
 
   .toggle-label {
