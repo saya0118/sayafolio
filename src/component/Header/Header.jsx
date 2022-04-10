@@ -39,19 +39,59 @@ export const Header = () => {
           </div>
           <ul className={`${styles["w-lo"]} ${styles["ul-flex"]}`}>
             <li>
-              <a className={styles["header-list"]}>Home</a>
+              <a
+                className={
+                  darkMode
+                    ? styles["underline-dark"]
+                    : styles["underline-light"]
+                }
+              >
+                Home
+              </a>
             </li>
             <li>
-              <a className={styles["header-list"]}>About</a>
+              <a
+                className={
+                  darkMode
+                    ? styles["underline-dark"]
+                    : styles["underline-light"]
+                }
+              >
+                About
+              </a>
             </li>
             <li>
-              <a className={styles["header-list"]}>Projects</a>
+              <a
+                className={
+                  darkMode
+                    ? styles["underline-dark"]
+                    : styles["underline-light"]
+                }
+              >
+                Projects
+              </a>
             </li>
             <li>
-              <a className={styles["header-list"]}>Skills</a>
+              <a
+                className={
+                  darkMode
+                    ? styles["underline-dark"]
+                    : styles["underline-light"]
+                }
+              >
+                Skills
+              </a>
             </li>
             <li>
-              <a className={styles["header-list"]}>Contact</a>
+              <a
+                className={
+                  darkMode
+                    ? styles["underline-dark"]
+                    : styles["underline-light"]
+                }
+              >
+                Contact
+              </a>
             </li>
           </ul>
         </div>
