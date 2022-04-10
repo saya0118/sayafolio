@@ -33,7 +33,11 @@ export const Skill = () => {
         Skills
       </h1>
       <div className={styles.flex}>
-        <div className={styles["skill-section"]}>
+        <div
+          className={`${styles["skill-section"]} ${
+            darkMode ? styles["section-dark"] : styles["section-light"]
+          }`}
+        >
           <h2 className={styles["skill-title"]}>Languages</h2>
           <div className={styles["skill-flex"]}>
             <div className={styles["skill-item"]}>
@@ -54,7 +58,11 @@ export const Skill = () => {
             </div>
           </div>
         </div>
-        <div className={styles["skill-section"]}>
+        <div
+          className={`${styles["skill-section"]} ${
+            darkMode ? styles["section-dark"] : styles["section-light"]
+          }`}
+        >
           <h2 className={styles["skill-title"]}>Flameworks/Libraries</h2>
           <div className={styles["skill-flex"]}>
             <div className={styles["skill-item"]}>
@@ -83,7 +91,11 @@ export const Skill = () => {
             </div>
           </div>
         </div>
-        <div className={styles["skill-section"]}>
+        <div
+          className={`${styles["skill-section"]} ${
+            darkMode ? styles["section-dark"] : styles["section-light"]
+          }`}
+        >
           <h2 className={styles["skill-title"]}>Others</h2>
           <div className={styles["skill-flex"]}>
             <div className={styles["skill-item"]}>

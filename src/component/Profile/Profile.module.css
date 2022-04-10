@@ -24,6 +24,7 @@
 }
 
 .profile-dark {
+  border-radius: 10px;
   box-shadow: 0 0 20px rgb(255, 255, 255), 0 0 10px rgb(255, 255, 255),
     0 0 10px rgb(231, 216, 165), 0 0 60px rgb(228, 224, 192);
 }
@@ -130,14 +131,14 @@
 
   .profile-light {
     margin-bottom: 20px;
-    width: 200px;
+    width: 250px;
     height: auto;
     box-shadow: -20px 20px 3px var(--main-color-yellow);
   }
 
   .profile-dark {
     margin-bottom: 20px;
-    width: 70%;
+    width: 250px;
   }
 
   .profile-text {
