@@ -8,7 +8,7 @@
 }
 
 .toggle-input:checked + .toggle-label {
-  background-color: var(--main-color-yellow);
+  background-color: var(--main-color-beige);
 }
 
 .toggle-input:checked + .toggle-label:after {
