@@ -55,7 +55,11 @@ export const Work = () => {
               </p>
               <div className={styles["link-container"]}>
                 <Button size="small" text="LIVE" href="#" />
-                <Button size="small" text="Code" href="#" />
+                <Button
+                  size="small"
+                  text="CODE"
+                  href="https://github.com/saya0118/WellBingo"
+                />
               </div>
             </div>
           </li>
@@ -80,7 +84,11 @@ export const Work = () => {
               </p>
               <div className={styles["link-container"]}>
                 <Button size="small" text="LIVE" href="#" />
-                <Button size="small" text="Code" href="#" />
+                <Button
+                  size="small"
+                  text="CODE"
+                  href="https://github.com/saya0118/sayabucks"
+                />
               </div>
             </div>
           </li>
@@ -105,7 +113,11 @@ export const Work = () => {
               </p>
               <div className={styles["link-container"]}>
                 <Button size="small" text="LIVE" href="#" />
-                <Button size="small" text="Code" href="#" />
+                <Button
+                  size="small"
+                  text="CODE"
+                  href="https://github.com/saya0118/voyage-notes"
+                />
               </div>
             </div>
           </li>
@@ -130,7 +142,11 @@ export const Work = () => {
               </p>
               <div className={styles["link-container"]}>
                 <Button size="small" text="LIVE" href="#" />
-                <Button size="small" text="Code" href="#" />
+                <Button
+                  size="small"
+                  text="CODE"
+                  href="https://github.com/saya0118/sayafolio"
+                />
               </div>
             </div>
           </li>
