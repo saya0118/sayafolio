@@ -22,7 +22,7 @@ export function useToggleColor() {
   return useContext(DarkModeToggleContext);
 }
 
-export function HamburgerProvider({ children }) {
+export function ContextProvider({ children }) {
   const [openHamburger, setOpenHamburger] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(false);
 
