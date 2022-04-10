@@ -1,6 +1,5 @@
 .work {
   width: 100%;
-  background-color: var(--main-color-mocha);
 }
 
 .work-container {
@@ -12,8 +11,50 @@
 
 .title {
   font-size: var(--font-size-md-title);
-  color: var(--main-color-charcoal);
   margin-bottom: 60px;
+}
+
+.title-name-dark {
+  animation: flickering 5s infinite;
+  text-shadow: 0 0 1px #fff, 0 0 20px rgb(201, 204, 0),
+    0 0 10px rgb(204, 201, 0), 0 0 10px rgb(255, 217, 0),
+    0 0 60px rgb(179, 255, 0);
+}
+
+@keyframes flickering {
+  0% {
+    border-color: transparent;
+    opacity: 0.2;
+  }
+
+  2% {
+    opacity: 1;
+  }
+
+  4% {
+    border-color: transparent;
+    opacity: 0.2;
+  }
+
+  8% {
+    opacity: 1;
+  }
+
+  28% {
+    opacity: 1;
+  }
+
+  30% {
+    opacity: 0.2;
+  }
+
+  36% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .project-ul {
@@ -28,6 +69,11 @@
 
 .project-list:nth-child(even) {
   flex-direction: row-reverse;
+}
+
+.link-container {
+  display: flex;
+  gap: 20px;
 }
 
 .animate-even {
@@ -80,7 +126,6 @@
 
 .project-title {
   font-size: var(--font-size-sm-title);
-  color: var(--main-color-charcoal);
   margin-bottom: 15px;
 }
 
@@ -104,15 +149,14 @@
   }
 
   .project-language {
-    text-align: left;
     font-size: var(--font-size-sm);
     margin-bottom: 15px;
   }
 
   .project-description {
-    text-align: left;
+    font-size: var(--font-size-ty);
   }
-  
+
   .project-title {
     font-size: var(--font-size-ty-title);
   }
@@ -125,56 +169,57 @@
     margin-right: initial;
     margin-left: initial;
   }
-  
+
   .title {
     font-size: var(--font-size-ty-title);
     text-align: center;
     padding-left: 0;
   }
-  
+
   .project-ul {
     flex-direction: column;
   }
-  
+
   .project-list {
     margin: 0;
     display: initial;
   }
-  
+
   .project-list:nth-child(even) {
     flex-direction: initial;
   }
-  
+
   .project-img-box {
     width: 100%;
     box-sizing: border-box;
   }
-  
+
   .project-description-box {
     padding-left: 20px;
     padding-right: 20px;
     width: 100%;
     box-sizing: border-box;
+    text-align: center;
   }
-  
+
   .project-language {
     font-size: var(--font-size-sm);
     margin-bottom: 15px;
   }
-  
+
   .project-title {
     font-size: 22px;
-    text-align: center;
-  }
-  
-  .project-description {
-    margin-bottom: 15px;
   }
 
-  .link-container{
-    text-align: center;
+  .project-description {
+    margin-bottom: 15px;
+    text-align: left;
   }
-  
+
+  .link-container {
+    justify-content: center;
+  }
+
   .project-link {
     margin-right: 10px;
   }

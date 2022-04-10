@@ -17,13 +17,21 @@ import IconFigma from "../../image/figma.svg";
 import IconTailwind from "../../image/tailwind.svg";
 import IconFirebase from "../../image/firebase.svg";
 import IconMysql from "../../image/mysql.svg";
-import IconVite from '../../image/vitejs.svg';
-import IconEslint from '../../image/eslint.svg';
+import IconVite from "../../image/vitejs.svg";
+import IconEslint from "../../image/eslint.svg";
+import { useColor } from "../Context/Context";
 
 export const Skill = () => {
+  const darkMode = useColor();
   return (
     <div className={styles.skill}>
-      <h1 className={styles.title}>Skills</h1>
+      <h1
+        className={`${styles["title"]} ${
+          darkMode ? styles["title-name-dark"] : ""
+        }`}
+      >
+        Skills
+      </h1>
       <div className={styles.flex}>
         <div className={styles["skill-section"]}>
           <h2 className={styles["skill-title"]}>Languages</h2>

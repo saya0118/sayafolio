@@ -1,6 +1,5 @@
 .profile {
   min-height: 100vh;
-  background-color: var(--main-color-beige);
   max-width: var(--max-width-first);
   display: flex;
   justify-content: center;
@@ -20,8 +19,13 @@
   text-align: center;
 }
 
-.profile-image {
+.profile-light {
   box-shadow: -20px 20px 3px var(--main-color-yellow);
+}
+
+.profile-dark {
+  box-shadow: 0 0 20px rgb(255, 255, 255), 0 0 10px rgb(255, 255, 255),
+    0 0 10px rgb(231, 216, 165), 0 0 60px rgb(228, 224, 192);
 }
 
 .profile-text {
@@ -32,22 +36,67 @@
 
 .title {
   font-size: var(--font-size-md-title);
-  color: var(--main-color-charcoal);
   text-align: initial;
   margin-bottom: 30px;
 }
 
+.title-name-dark {
+  animation: flickering 5s infinite;
+  text-shadow: 0 0 1px #fff, 0 0 20px rgb(201, 204, 0),
+    0 0 10px rgb(204, 201, 0), 0 0 10px rgb(255, 217, 0),
+    0 0 60px rgb(179, 255, 0);
+}
+
+@keyframes flickering {
+  0% {
+    border-color: transparent;
+    opacity: 0.2;
+  }
+
+  2% {
+    opacity: 1;
+  }
+
+  4% {
+    border-color: transparent;
+    opacity: 0.2;
+  }
+
+  8% {
+    opacity: 1;
+  }
+
+  28% {
+    opacity: 1;
+  }
+
+  30% {
+    opacity: 0.2;
+  }
+
+  36% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .profile-description {
-  color: var(--main-color-charcoal);
   font-size: var(--font-size-sm);
   text-align: left;
   line-height: 1.5em;
 }
 
 @media screen and (min-width: 767px) and (max-width: 930px) {
-  .profile-image {
+  .profile-light {
     width: 80%;
     box-shadow: -20px 20px 3px var(--main-color-yellow);
+  }
+
+  .profile-dark {
+    width: 80%;
   }
 
   .container {
@@ -79,11 +128,16 @@
     display: initial;
   }
 
-  .profile-image {
+  .profile-light {
     margin-bottom: 20px;
     width: 200px;
     height: auto;
     box-shadow: -20px 20px 3px var(--main-color-yellow);
+  }
+
+  .profile-dark {
+    margin-bottom: 20px;
+    width: 70%;
   }
 
   .profile-text {
