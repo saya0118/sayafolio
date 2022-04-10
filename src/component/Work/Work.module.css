@@ -12,7 +12,6 @@
 
 .title {
   font-size: var(--font-size-md-title);
-  color: var(--main-color-charcoal);
   margin-bottom: 60px;
 }
 
@@ -80,7 +79,6 @@
 
 .project-title {
   font-size: var(--font-size-sm-title);
-  color: var(--main-color-charcoal);
   margin-bottom: 15px;
 }
 

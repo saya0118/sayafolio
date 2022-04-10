@@ -1,6 +1,5 @@
 .header {
   min-height: 100vh;
-  background-color: var(--main-color-beige);
   max-width: var(--max-width-first);
   margin-right: auto;
   margin-left: auto;
@@ -47,7 +46,6 @@ li {
 }
 
 .header-list {
-  color: var(--main-color-charcoal);
 }
 
 .header-list:hover {
@@ -137,7 +135,6 @@ li {
 .greeting-description {
   font-size: var(--font-size-lg);
   padding-top: 30px;
-  color: var(--main-color-charcoal);
 }
 
 .gif-container {
@@ -230,7 +227,6 @@ li {
   .greeting-description {
     font-size: var(--font-size-md);
     padding-top: 30px;
-    color: var(--main-color-charcoal);
     text-align: left;
   }
 
