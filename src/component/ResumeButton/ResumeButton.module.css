@@ -9,12 +9,20 @@
   line-height: 40px;
   font-size: 18px;
   text-decoration: none;
-  color: var(--main-color-charcoal);
-  border: 2px solid var(--main-color-charcoal);
   letter-spacing: 2px;
   text-align: center;
   position: relative;
   transition: all 0.35s;
+}
+
+.resume-link-light{
+  border: 2px solid var(--main-color-charcoal);
+  color: var(--main-color-charcoal)
+}
+
+.resume-link-dark{
+  border: 2px solid var(--main-color-beige);
+  color: var(--main-color-beige)
 }
 
 .resume-link .resume-title {
@@ -29,12 +37,23 @@
   left: 0;
   width: 0;
   height: 100%;
-  background: var(--main-color-charcoal);
   transition: all 0.35s;
 }
 
-.resume-link:hover {
-  color: #fff;
+.resume-link-light:after{
+  background: var(--main-color-charcoal);
+}
+
+.resume-link-dark:after{
+  background: var(--main-color-beige);
+}
+
+.resume-link-light:hover {
+  color: var(--main-color-beige);
+}
+
+.resume-link-dark:hover {
+  color: var(--dark-bg-color);
 }
 
 .resume-link:hover:after {
