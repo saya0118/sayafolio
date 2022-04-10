@@ -71,6 +71,11 @@
   flex-direction: row-reverse;
 }
 
+.link-container {
+  display: flex;
+  gap: 20px;
+}
+
 .animate-even {
   animation: animEven 2s;
 }
@@ -132,17 +137,6 @@
   margin-right: 10px;
 }
 
-.dark-link{
-
-}
-
-.light-link{
-  color: var(--main-color-charcoal);
-  text-decoration: none;
-  border: 1px solid var(--main-color-charcoal);
-  padding: 0 10px;
-}
-
 @media screen and (min-width: 601px) and (max-width: 930px) {
   .work-container {
     padding: 40px 0;
@@ -155,13 +149,11 @@
   }
 
   .project-language {
-    text-align: center;
     font-size: var(--font-size-sm);
     margin-bottom: 15px;
   }
 
   .project-description {
-    text-align: center;
     font-size: var(--font-size-ty);
   }
 
@@ -225,7 +217,7 @@
   }
 
   .link-container {
-    text-align: center;
+    justify-content: center;
   }
 
   .project-link {

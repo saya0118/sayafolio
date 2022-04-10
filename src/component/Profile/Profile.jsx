@@ -13,14 +13,20 @@ export const Profile = () => {
         <div className={styles.image}>
           <img
             src={ProfileImage}
-            className={styles["profile-image"]}
+            className={
+              darkMode ? styles["profile-dark"] : styles["profile-light"]
+            }
             alt="profile image"
           />
         </div>
         <div className={styles["profile-text"]}>
-          <h1 className={`${styles["title"]} ${darkMode
-                  ? styles["title-name-dark"]
-                  :''}`}>About me</h1>
+          <h1
+            className={`${styles["title"]} ${
+              darkMode ? styles["title-name-dark"] : ""
+            }`}
+          >
+            About me
+          </h1>
           <p className={styles["profile-description"]}>
             Hi! I'm Saya.
             <br />
@@ -37,9 +43,9 @@ export const Profile = () => {
             it good timing to change my career and jump into the unknown world?"
             That's how I started to get in the world of programming.
           </p>
-          <div className={styles['profile-mobile']}>
+          <div className={styles["profile-mobile"]}>
             <Social />
-            <Button text="Resume"/>
+            <Button size="normal" text="Resume" href="#" />
           </div>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Work.module.css";
+import { Button } from "../Button";
 import { useColor } from "../Context/Context";
 
 export const Work = () => {
@@ -53,22 +54,8 @@ export const Work = () => {
                 reprehenderit cumque quidem.
               </p>
               <div className={styles["link-container"]}>
-                <a
-                  href=""
-                  className={`${styles["project-link"]} ${
-                    darkMode ? styles["dark-link"] : styles["light-link"]
-                  }`}
-                >
-                  LIVE
-                </a>
-                <a
-                  href=""
-                  className={`${styles["project-link"]} ${
-                    darkMode ? styles["dark-link"] : styles["light-link"]
-                  }`}
-                >
-                  CODE
-                </a>
+                <Button size="small" text="LIVE" href="#"/>
+                <Button size="small" text="Code" href="#"/>    
               </div>
             </div>
           </li>
@@ -92,22 +79,8 @@ export const Work = () => {
                 reprehenderit cumque quidem.
               </p>
               <div className={styles["link-container"]}>
-                <a
-                  href=""
-                  className={`${styles["project-link"]} ${
-                    darkMode ? styles["dark-link"] : styles["light-link"]
-                  }`}
-                >
-                  LIVE
-                </a>
-                <a
-                  href=""
-                  className={`${styles["project-link"]} ${
-                    darkMode ? styles["dark-link"] : styles["light-link"]
-                  }`}
-                >
-                  CODE
-                </a>
+              <Button size="small" text="LIVE" href="#"/>
+                <Button size="small" text="Code" href="#"/> 
               </div>
             </div>
           </li>
@@ -131,22 +104,8 @@ export const Work = () => {
                 reprehenderit cumque quidem.
               </p>
               <div className={styles["link-container"]}>
-                <a
-                  href=""
-                  className={`${styles["project-link"]} ${
-                    darkMode ? styles["dark-link"] : styles["light-link"]
-                  }`}
-                >
-                  LIVE
-                </a>
-                <a
-                  href=""
-                  className={`${styles["project-link"]} ${
-                    darkMode ? styles["dark-link"] : styles["light-link"]
-                  }`}
-                >
-                  CODE
-                </a>
+              <Button size="small" text="LIVE" href="#"/>
+                <Button size="small" text="Code" href="#"/> 
               </div>
             </div>
           </li>
@@ -170,22 +129,8 @@ export const Work = () => {
                 reprehenderit cumque quidem.
               </p>
               <div className={styles["link-container"]}>
-                <a
-                  href=""
-                  className={`${styles["project-link"]} ${
-                    darkMode ? styles["dark-link"] : styles["light-link"]
-                  }`}
-                >
-                  LIVE
-                </a>
-                <a
-                  href=""
-                  className={`${styles["project-link"]} ${
-                    darkMode ? styles["dark-link"] : styles["light-link"]
-                  }`}
-                >
-                  CODE
-                </a>
+              <Button size="small" text="LIVE" href="#"/>
+                <Button size="small" text="Code" href="#"/> 
               </div>
             </div>
           </li>
