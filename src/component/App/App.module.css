@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  /* border: 1px red solid; */
 }
 
 .app {
@@ -31,4 +30,7 @@
   margin: 0;
   padding: 0;
   background-color: var(--main-color-beige);
+  transition: .7s;
+  font-family: 'Cairo', sans-serif;
+  letter-spacing: 0.5px;
 }
