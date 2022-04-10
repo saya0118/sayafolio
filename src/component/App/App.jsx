@@ -14,6 +14,8 @@ export function App() {
       ? "var(--dark-bg-color)"
       : "var(--main-color-beige)",
     color: darkMode ? "white" : "var(--main-color-charcoal)",
+    fontFamily: darkMode ? "'Cairo', sans-serif" : "'Exo 2', sans-serif",
+    letterSpacing: darkMode ? '1px' : '',
   };
   return (
     <div style={themeStyles} className={styles.app}>
