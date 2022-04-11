@@ -131,14 +131,17 @@ export const Work = () => {
             </div>
             <div className={styles["project-description-box"]}>
               <p className={styles["project-language"]}>
-                React/React Hooks/CSS Modules/firebase
+                React/React Hooks/CSS Modules/firebase/Responsive Design
               </p>
               <h3 className={styles["project-title"]}>Sayafolio</h3>
               <p className={styles["project-description"]}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
-                fugit sit fuga dignissimos. Expedita ipsa nobis et molestias id
-                aspernatur? Aliquam iusto eveniet ea enim voluptatum praesentium
-                reprehenderit cumque quidem.
+                This portfolio website is built in 4days using React/React
+                Hooks. The concept of this website is "show saya's personality".
+                I have a switch like the toggle button of this website to make a
+                distinction between when I should knuckle down and when I should
+                take a break. The light mode expresses my friendly, calm and
+                peaceful personality, on the other hand, the dark mode expresses
+                my passion for programming.
               </p>
               <div className={styles["link-container"]}>
                 <Button size="small" text="LIVE" href="#" />
