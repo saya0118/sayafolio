@@ -20,7 +20,7 @@ export const Header = () => {
           <ul className={`${styles["w-sh"]} ${styles["ul-flex"]}`}>
             <li>
               <img
-                src={darkMode ? darkLogo : lightLogo}
+                src={lightLogo}
                 alt="sayaka's logo"
                 className={styles.logo}
               />
