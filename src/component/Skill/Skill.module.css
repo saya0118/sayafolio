@@ -182,6 +182,9 @@
 }
 
 @media screen and (max-width: 600px) {
+  .skill {
+    padding: 30px 20px;
+  }
   .title {
     font-size: var(--font-size-ty-title);
     margin-top: 30px;
