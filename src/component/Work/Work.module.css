@@ -1,17 +1,11 @@
 .work {
-  width: 100%;
-}
-
-.work-container {
-  max-width: var(--max-width-first);
-  margin-right: auto;
-  margin-left: auto;
+  padding: 30px 10%;
 }
 
 .title {
   font-size: var(--font-size-md-title);
-  margin-bottom: 60px;
-  padding-left: 10%;
+  margin-top:30px;
+  margin-bottom: 30px;
 }
 
 .title-name-dark {
@@ -145,7 +139,6 @@
 
   .title {
     font-size: var(--font-size-sm-title);
-    padding-left: 30px;
   }
 
   .project-language {
