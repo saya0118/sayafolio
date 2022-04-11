@@ -44,7 +44,7 @@ export const Work = () => {
             </div>
             <div className={styles["project-description-box"]}>
               <p className={styles["project-language"]}>
-                React/Redux/SASS(SCSS)/Material UI/MongoDB
+                React | Redux | SASS(SCSS) | Material UI | MongoDB | Responsive Design
               </p>
               <h3 className={styles["project-title"]}>WellBingo</h3>
               <p className={styles["project-description"]}>
@@ -73,7 +73,7 @@ export const Work = () => {
             </div>
             <div className={styles["project-description-box"]}>
               <p className={styles["project-language"]}>
-                TypeScript/React Hooks/CSS modules
+                TypeScript | React Hooks | CSS modules | Responsive Design
               </p>
               <h3 className={styles["project-title"]}>Sayabucks</h3>
               <p className={styles["project-description"]}>
@@ -102,7 +102,7 @@ export const Work = () => {
             </div>
             <div className={styles["project-description-box"]}>
               <p className={styles["project-language"]}>
-                TypeScript/React Hooks/Tailwind.css/Google API/Unsplash API
+                TypeScript | React Hooks | Tailwind.css | Google API | Unsplash API
               </p>
               <h3 className={styles["project-title"]}>Voyage Notes</h3>
               <p className={styles["project-description"]}>
@@ -131,7 +131,7 @@ export const Work = () => {
             </div>
             <div className={styles["project-description-box"]}>
               <p className={styles["project-language"]}>
-                React/React Hooks/CSS Modules/firebase/Responsive Design
+                React | React Hooks | CSS Modules | firebase | Responsive Design
               </p>
               <h3 className={styles["project-title"]}>Sayafolio</h3>
               <p className={styles["project-description"]}>
