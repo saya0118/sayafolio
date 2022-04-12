@@ -44,7 +44,8 @@ export const Work = () => {
             </div>
             <div className={styles["project-description-box"]}>
               <p className={styles["project-language"]}>
-                React | Redux | SASS(SCSS) | Material UI | MongoDB | Responsive Design
+                React | Redux | SASS(SCSS) | Material UI | MongoDB | Responsive
+                Design
               </p>
               <h3 className={styles["project-title"]}>WellBingo</h3>
               <p className={styles["project-description"]}>
@@ -102,7 +103,8 @@ export const Work = () => {
             </div>
             <div className={styles["project-description-box"]}>
               <p className={styles["project-language"]}>
-                TypeScript | React Hooks | Tailwind.css | Google API | Unsplash API
+                TypeScript | React Hooks | Tailwind.css | Google API | Unsplash
+                API
               </p>
               <h3 className={styles["project-title"]}>Voyage Notes</h3>
               <p className={styles["project-description"]}>
@@ -135,13 +137,10 @@ export const Work = () => {
               </p>
               <h3 className={styles["project-title"]}>Sayafolio</h3>
               <p className={styles["project-description"]}>
-                This portfolio website is built in 4days using React/React
-                Hooks. The concept of this website is "show saya's personality".
-                I have a switch like the toggle button of this website to make a
-                distinction between when I should knuckle down and when I should
-                take a break. The light mode expresses my friendly, calm and
-                peaceful personality, on the other hand, the dark mode expresses
-                my passion for programming.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Aliquam consequuntur sunt rem a ab sequi. Architecto
+                necessitatibus provident aliquid voluptatum qui. Commodi
+                voluptas aut repellat. Assumenda totam sint quas dolores.
               </p>
               <div className={styles["link-container"]}>
                 <Button size="small" text="LIVE" href="#" />
