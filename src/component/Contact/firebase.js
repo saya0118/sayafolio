@@ -1,6 +1,6 @@
-import firebase from "firebase";
-import getFirestore from "firebase-functions";
-import getFunctions from "@firebase/firestore";
+import { initializeApp } from "firebase/app";
+import { getFirestore } from "@firebase/firestore";
+import { getFunctions } from "firebase/functions";
 
 const firebaseConfig = {
   apiKey: "AIzaSyB_mwKr655o6Kh7QQm4CcIx9SB_IbIU6yI",
