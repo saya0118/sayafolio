@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 import styles from "./Contact.module.css";
 import { useColor } from "../Context/Context";
 import { Social } from "../Social";
@@ -12,8 +13,10 @@ export const Contact = () => {
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [error, setError] = useState(false);
   const [message, setMessage] = useState("");
   const [loader, setLoader] = useState(false);
+  const [formIsValid, setFormIsValid] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -37,6 +40,16 @@ export const Contact = () => {
     setName("");
     setEmail("");
     setMessage("");
+
+    sendMail();
+  };
+
+  const sendMail = () => {
+    axios.post("https://us-central1-sayafolio.cloudfunctions.net/sendEmail", {
+      name: "saya",
+      email: "abc",
+      message: "hello",
+    });
   };
 
   return (
