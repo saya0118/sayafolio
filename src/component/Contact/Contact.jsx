@@ -4,10 +4,12 @@ import styles from "./Contact.module.css";
 import { useColor } from "../Context/Context";
 import { Social } from "../Social";
 import { db, functions } from "./firebase";
-import { httpsCallable } from "firebase-functions";
+import { httpsCallable } from "firebase/functions";
 import contactGif from "../../image/contact.gif";
 import imgMoon from "../../image/moon.svg";
 import { Button } from "../Button";
+
+const sendEmail = httpsCallable(functions, "sendEmail");
 
 export const Contact = () => {
   const darkMode = useColor();
@@ -17,44 +19,38 @@ export const Contact = () => {
   const [message, setMessage] = useState("");
   const [loader, setLoader] = useState(false);
 
-  const sendEmail = httpsCallable(functions, 'sendEmail');
-
   const handleSubmit = (e) => {
-    e.preventDefault();
-    setLoader(true);
+    // e.preventDefault();
+    // setLoader(true);
 
-    db.collection("contacts")
-      .add({
-        name: name,
-        email: email,
-        message: message,
-      })
-      .then(() => {
-        alert("Message has been sent to Saya!");
-        setLoader(false);
-      })
-      .catch((error) => {
-        alert(error.message);
-        setLoader(false);
-      });
+    // db.collection("contacts")
+    //   .add({
+    //     name: name,
+    //     email: email,
+    //     message: message,
+    //   })
+    //   .then(() => {
+    //     alert("Message has been sent to Saya!");
+    //     setLoader(false);
+    //   })
+    //   .catch((error) => {
+    //     alert(error.message);
+    //     setLoader(false);
+    //   });
 
-    setName("");
-    setEmail("");
-    setMessage("");
+    // setName("");
+    // setEmail("");
+    // setMessage("");
 
     sendMail();
   };
 
   const sendMail = () => {
-    axios({
-      method: "POST",
-      url: `https://us-central1-sayafolio.cloudfunctions.net/sendEmail`,
-      withCredentials: true,
-      params: {
-        name: "saya",
-        email: "email",
-        message: "hello",
-      },
+    console.log("call");
+    sendMail({
+      name: "saya",
+      email: "email",
+      message: "hello",
     });
   };
 
