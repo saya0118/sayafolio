@@ -1,32 +1,47 @@
 import React from "react";
 import ProfileImage from "../../image/profile.png";
 import styles from "./Profile.module.css";
+import { Social } from "../Social";
+import { Button } from "../Button";
+import { useColor } from "../Context/Context";
 
 export const Profile = () => {
+  const darkMode = useColor();
   return (
     <div className={styles.profile}>
-      <div className={styles["title-container"]}>
-        <h1 className={styles["title"]}>Who is Saya?</h1>
-      </div>
       <div className={styles.container}>
-        <p>
-          Hi! I'm Saya.
-          <br />
-          I'm a React developer based in Vancouver. I was born in Seoul, South
-          Korea and grown up in Tokyo, Japan. Challenging and creating new
-          things have been my favorite since my childhood. Therefore, I've tried
-          to learn Ukulele, piano and also I've traveled 15 countries by myself
-          when I was in university.
-          <br />I learned agriculture development in the university and I was
-          supposed to go to the graduated college in the UK after graduated.
-          However, I had to change my plan due to these days situation. Here's
-          what I thought then. "Well, I've been interested in creating a website
-          but it's a bit difficult to change my career until now. Is it good
-          timing to change my career and jump into the unknown world?" That's
-          how I started to get in the world of programming.
-        </p>
         <div className={styles.image}>
-          <img src={ProfileImage} className={styles["profile-image"]} alt="profile image"/>
+          <img
+            src={ProfileImage}
+            className={
+              darkMode ? styles["profile-dark"] : styles["profile-light"]
+            }
+            alt="profile image"
+          />
+        </div>
+        <div className={styles["profile-text"]}>
+          <h1
+            className={`${styles["title"]} ${
+              darkMode ? styles["title-name-dark"] : ""
+            }`}
+          >
+            About me
+          </h1>
+          <p className={styles["profile-description"]}>
+            Hi! I'm Saya.
+            <br />
+            I'm a front-end developer who is currently pivoting my way into
+            tech. My background in the hospitality industry and international
+            agriculture education has given me the ability to be a diversified
+            thinker, challenging and a team player. I'm a curious person who is
+            never stop learning and also I can always find enjoyments there. I'm
+            super looking for working in tech community and eager to improve my
+            programming skills!
+          </p>
+          <div className={styles["profile-mobile"]}>
+            <Social />
+            <Button size="normal" text="Resume" href="#" />
+          </div>
         </div>
       </div>
     </div>
