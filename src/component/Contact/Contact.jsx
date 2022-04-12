@@ -3,7 +3,8 @@ import axios from "axios";
 import styles from "./Contact.module.css";
 import { useColor } from "../Context/Context";
 import { Social } from "../Social";
-import { db } from "./firebase";
+import { db, functions } from "./firebase";
+import { httpsCallable } from "firebase-functions";
 import contactGif from "../../image/contact.gif";
 import imgMoon from "../../image/moon.svg";
 import { Button } from "../Button";
@@ -13,10 +14,10 @@ export const Contact = () => {
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [error, setError] = useState(false);
   const [message, setMessage] = useState("");
   const [loader, setLoader] = useState(false);
-  const [formIsValid, setFormIsValid] = useState(false);
+
+  const sendEmail = httpsCallable(functions, 'sendEmail');
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -45,10 +46,15 @@ export const Contact = () => {
   };
 
   const sendMail = () => {
-    axios.post("https://us-central1-sayafolio.cloudfunctions.net/sendEmail", {
-      name: "saya",
-      email: "abc",
-      message: "hello",
+    axios({
+      method: "POST",
+      url: `https://us-central1-sayafolio.cloudfunctions.net/sendEmail`,
+      withCredentials: true,
+      params: {
+        name: "saya",
+        email: "email",
+        message: "hello",
+      },
     });
   };
 
