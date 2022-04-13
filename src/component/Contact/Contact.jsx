@@ -20,7 +20,7 @@ export const Contact = () => {
   const [loader, setLoader] = useState(false);
 
   const handleSubmit = (e) => {
-    // e.preventDefault();
+    e.preventDefault();
     // setLoader(true);
 
     // db.collection("contacts")
@@ -47,7 +47,7 @@ export const Contact = () => {
 
   const sendMail = () => {
     console.log("call");
-    sendMail({
+    sendEmail({
       name: "saya",
       email: "email",
       message: "hello",
