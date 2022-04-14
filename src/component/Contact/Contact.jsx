@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import axios from "axios";
+import React, { useState, useEffect } from "react";
+import { collection, getDocs } from "firebase/firestore";
 import styles from "./Contact.module.css";
 import { useColor } from "../Context/Context";
 import { Social } from "../Social";
@@ -12,12 +12,19 @@ import { Button } from "../Button";
 const sendEmail = httpsCallable(functions, "sendEmail");
 
 export const Contact = () => {
+  const test = collection(db, "contacts");
   const darkMode = useColor();
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [loader, setLoader] = useState(false);
+
+  useEffect(() => {
+    getDocs(test).then((data) => {
+      console.log(data);
+    });
+  });
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -48,9 +55,9 @@ export const Contact = () => {
   const sendMail = () => {
     console.log("call");
     sendEmail({
-      name: "saya",
-      email: "email",
-      message: "hello",
+      name: name,
+      email: email,
+      message: message,
     });
   };
 

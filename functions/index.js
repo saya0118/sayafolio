@@ -1,7 +1,7 @@
 const functions = require("firebase-functions");
 const nodemailer = require("nodemailer");
 
-const cors = require('cors')({ origin: true });
+const cors = require("cors")({ origin: true });
 
 let transporter = nodemailer.createTransport({
   service: "gmail",
@@ -22,9 +22,9 @@ exports.sendEmail = functions.https.onRequest((req, res) => {
   );
 
   cors(req, res, () => {
-    const email = req.body.email;
-    const name = req.body.name;
-    const message = req.body.message;
+    const email = req.body.data.email;
+    const name = req.body.data.name;
+    const message = req.body.data.message;
 
     const mailOptions = {
       from: email,
