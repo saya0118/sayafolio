@@ -48,7 +48,6 @@ export const Contact = () => {
     // setName("");
     // setEmail("");
     // setMessage("");
-
     sendMail();
   };
 
