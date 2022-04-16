@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import styles from "./Work.module.css";
 import { Button } from "../Button";
 import { useColor } from "../Context/Context";
+import imgPortfolio from '../../image/work-portfolio.svg'
 
 export const Work = () => {
   const darkMode = useColor();
@@ -129,7 +130,7 @@ export const Work = () => {
             } `}
           >
             <div className={styles["project-img-box"]}>
-              <img className={styles["project-image"]} src="" alt="" />
+              <img className={styles["project-image"]} src={imgPortfolio} alt="" />
             </div>
             <div className={styles["project-description-box"]}>
               <p className={styles["project-language"]}>

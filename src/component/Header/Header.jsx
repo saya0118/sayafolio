@@ -18,17 +18,17 @@ export const Header = () => {
       <div className={styles["nav-bar"]}>
         <div className={styles["nav-left"]}>
           <ul className={`${styles["w-sh"]} ${styles["ul-flex"]}`}>
-            <li>
+            <li className={styles['nav-list']}>
               <img
                 src={lightLogo}
                 alt="sayaka's logo"
                 className={styles.logo}
               />
             </li>
-            <li>
+            <li className={styles['nav-list']}>
               <p className={styles.name}>Sayaka Matsuda</p>
             </li>
-            <li>
+            <li className={styles['nav-list']}>
               <ToggleButton />
             </li>
           </ul>

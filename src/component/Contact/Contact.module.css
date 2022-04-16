@@ -120,7 +120,7 @@
   transition: 0.3s;
 }
 
-@media screen and (min-width: 601px) and (max-width: 1024px) {
+@media screen and (min-width: 751px) and (max-width: 930px) {
   .contact {
     padding: 30px 10px;
     font-size: var(--font-size-ty);
@@ -157,7 +157,7 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
   .contact {
     padding: 30px 20px;
     text-align: center;
@@ -165,7 +165,7 @@
   }
 
   .title {
-    font-size: var(--font-size-ty-title);
+    font-size: var(--font-size-sm-title);
     text-align: center;
     margin-top: 30px;
   }

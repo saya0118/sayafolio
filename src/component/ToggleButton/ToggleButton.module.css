@@ -41,23 +41,24 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 800px) {
   .toggle-button {
-    width: 33px;
+    width: 35px;
     height: 18px;
   }
 
   .toggle-input:checked + .toggle-label:after {
-    left: 13px;
+    left: 10px;
   }
 
   .toggle-label {
-    width: 33px;
-    height: 18px;
+    width: 27px;
+    height: 15px;
+    margin-bottom: 5px;
   }
 
   .toggle-label:after {
-    width: 20px;
-    height: 20px;
+    width: 17px;
+    height: 17px;
   }
 }
