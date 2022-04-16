@@ -131,7 +131,7 @@
   margin-right: 10px;
 }
 
-@media screen and (min-width: 601px) and (max-width: 930px) {
+@media screen and (min-width: 801px) and (max-width: 1024px) {
   .work-container {
     padding: 40px 0;
     max-width: var(--max-width-second);
@@ -155,7 +155,7 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .work {
     padding: 30px 20px;
   }
