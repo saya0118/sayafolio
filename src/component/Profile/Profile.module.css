@@ -164,7 +164,7 @@
 
 @media screen and (max-width: 600px) {
   .title {
-    font-size: var(--font-size-ty-title);
+    font-size: var(--font-size-sm-title);
     margin-top: 20px;
   }
 
@@ -173,5 +173,13 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
+  }
+
+  .profile-light {
+    width: 200px;
+  }
+
+  .profile-dark {
+    width: 200px;
   }
 }
