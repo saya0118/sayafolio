@@ -3,6 +3,7 @@ import styles from "./Work.module.css";
 import { Button } from "../Button";
 import { useColor } from "../Context/Context";
 import imgPortfolio from "../../image/work-portfolio.svg";
+import imgSayabucks from "../../image/sayabucks.svg";
 
 export const Work = () => {
   const darkMode = useColor();
@@ -77,8 +78,8 @@ export const Work = () => {
             <div className={styles["project-img-box"]}>
               <img
                 className={styles["project-image"]}
-                src={imgPortfolio}
-                alt=""
+                src={imgSayabucks}
+                alt="sayabucks image"
               />
             </div>
             <div className={styles["project-description-box"]}>
