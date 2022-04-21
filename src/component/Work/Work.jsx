@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import styles from "./Work.module.css";
 import { Button } from "../Button";
 import { useColor } from "../Context/Context";
-import imgPortfolio from '../../image/work-portfolio.svg'
+import imgPortfolio from "../../image/work-portfolio.svg";
 
 export const Work = () => {
   const darkMode = useColor();
@@ -41,12 +41,16 @@ export const Work = () => {
             } `}
           >
             <div className={styles["project-img-box"]}>
-              <img className={styles["project-image"]} src="" alt="" />
+              <img
+                className={styles["project-image"]}
+                src={imgPortfolio}
+                alt=""
+              />
             </div>
             <div className={styles["project-description-box"]}>
               <p className={styles["project-language"]}>
-                React | Redux | SASS(SCSS) | Material UI | MongoDB | Responsive
-                Design
+                React | Redux | SASS(SCSS) | Material UI | MongoDB | Express.js
+                | Responsive Design
               </p>
               <h3 className={styles["project-title"]}>WellBingo</h3>
               <p className={styles["project-description"]}>
@@ -71,7 +75,11 @@ export const Work = () => {
             } `}
           >
             <div className={styles["project-img-box"]}>
-              <img className={styles["project-image"]} src="" alt="" />
+              <img
+                className={styles["project-image"]}
+                src={imgPortfolio}
+                alt=""
+              />
             </div>
             <div className={styles["project-description-box"]}>
               <p className={styles["project-language"]}>
@@ -100,7 +108,11 @@ export const Work = () => {
             } `}
           >
             <div className={styles["project-img-box"]}>
-              <img className={styles["project-image"]} src="" alt="" />
+              <img
+                className={styles["project-image"]}
+                src={imgPortfolio}
+                alt=""
+              />
             </div>
             <div className={styles["project-description-box"]}>
               <p className={styles["project-language"]}>
@@ -130,11 +142,15 @@ export const Work = () => {
             } `}
           >
             <div className={styles["project-img-box"]}>
-              <img className={styles["project-image"]} src={imgPortfolio} alt="" />
+              <img
+                className={styles["project-image"]}
+                src={imgPortfolio}
+                alt=""
+              />
             </div>
             <div className={styles["project-description-box"]}>
               <p className={styles["project-language"]}>
-                React | React Hooks | CSS Modules | firebase | Responsive Design
+                React | React Hooks | CSS Modules | Firebase | Responsive Design
               </p>
               <h3 className={styles["project-title"]}>Sayafolio</h3>
               <p className={styles["project-description"]}>

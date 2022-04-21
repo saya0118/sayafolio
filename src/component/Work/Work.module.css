@@ -229,7 +229,8 @@
   }
 
   .project-list {
-    display: initial;
+    display: inline-block;
+    margin-bottom: 50px;
   }
 
   .project-list:nth-child(even) {
