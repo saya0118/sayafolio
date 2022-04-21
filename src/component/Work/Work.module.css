@@ -110,6 +110,7 @@
 
 .project-image {
   width: 100%;
+  border: 1px solid var(--main-color-beige);
 }
 
 .project-description-box {
