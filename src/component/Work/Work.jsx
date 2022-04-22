@@ -97,7 +97,7 @@ export const Work = () => {
                 TypeScript, CSS modules, and cypress for testing.
               </p>
               <div className={styles["link-container"]}>
-                <Button size="small" text="LIVE" href="#" />
+                <Button size="small" text="LIVE" href="https://6262f94941a7c221a24dce7b--funny-empanada-bbcd3a.netlify.app/" />
                 <Button
                   size="small"
                   text="CODE"
