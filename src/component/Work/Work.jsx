@@ -4,6 +4,7 @@ import { Button } from "../Button";
 import { useColor } from "../Context/Context";
 import imgPortfolio from "../../image/work-portfolio.svg";
 import imgSayabucks from "../../image/sayabucks.svg";
+import imgWellbingo from "../../image/wellbingo.svg";
 
 export const Work = () => {
   const darkMode = useColor();
@@ -44,7 +45,7 @@ export const Work = () => {
             <div className={styles["project-img-box"]}>
               <img
                 className={styles["project-image"]}
-                src={imgPortfolio}
+                src={imgWellbingo}
                 alt=""
               />
             </div>
