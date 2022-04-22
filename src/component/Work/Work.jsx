@@ -4,6 +4,7 @@ import { Button } from "../Button";
 import { useColor } from "../Context/Context";
 import imgPortfolio from "../../image/work-portfolio.svg";
 import imgSayabucks from "../../image/sayabucks.svg";
+import imgWellbingo from "../../image/wellbingo.svg";
 
 export const Work = () => {
   const darkMode = useColor();
@@ -24,7 +25,7 @@ export const Work = () => {
   }, []);
 
   return (
-    <div style={themeStyle} className={styles.work}>
+    <div style={themeStyle} className={styles.work} id="works">
       <div className={styles["work-container"]}>
         <div className={styles["section-title"]}>
           <h1
@@ -44,7 +45,7 @@ export const Work = () => {
             <div className={styles["project-img-box"]}>
               <img
                 className={styles["project-image"]}
-                src={imgPortfolio}
+                src={imgWellbingo}
                 alt=""
               />
             </div>
@@ -92,10 +93,8 @@ export const Work = () => {
               </p>
               <h3 className={styles["project-title"]}>Sayabucks</h3>
               <p className={styles["project-description"]}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
-                fugit sit fuga dignissimos. Expedita ipsa nobis et molestias id
-                aspernatur? Aliquam iusto eveniet ea enim voluptatum praesentium
-                reprehenderit cumque quidem.
+                I recreated the Starbucks landing page from scratch using React,
+                TypeScript, etc.
               </p>
               <div className={styles["link-container"]}>
                 <Button size="small" text="LIVE" href="#" />

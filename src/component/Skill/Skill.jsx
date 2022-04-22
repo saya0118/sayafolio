@@ -24,7 +24,7 @@ import { useColor } from "../Context/Context";
 export const Skill = () => {
   const darkMode = useColor();
   return (
-    <div className={styles.skill}>
+    <div className={styles.skill} id="skill">
       <h1
         className={`${styles["title"]} ${
           darkMode ? styles["title-name-dark"] : ""
@@ -63,7 +63,7 @@ export const Skill = () => {
             darkMode ? styles["section-dark"] : styles["section-light"]
           }`}
         >
-          <h2 className={styles["skill-title"]}>Flameworks/Libraries</h2>
+          <h2 className={styles["skill-title"]}>Frameworks/Libraries</h2>
           <div className={styles["skill-flex"]}>
             <div className={styles["skill-item"]}>
               <img className={styles.img} src={IconReact} />

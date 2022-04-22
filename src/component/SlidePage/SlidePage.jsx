@@ -18,6 +18,7 @@ export const SlidePage = () => {
             className={
               darkMode ? styles["underline-dark"] : styles["underline-light"]
             }
+            href="#header"
           >
             Home
           </a>
@@ -27,6 +28,7 @@ export const SlidePage = () => {
             className={
               darkMode ? styles["underline-dark"] : styles["underline-light"]
             }
+            href="#about"
           >
             About
           </a>
@@ -36,6 +38,7 @@ export const SlidePage = () => {
             className={
               darkMode ? styles["underline-dark"] : styles["underline-light"]
             }
+            href="#works"
           >
             Projects
           </a>
@@ -45,6 +48,7 @@ export const SlidePage = () => {
             className={
               darkMode ? styles["underline-dark"] : styles["underline-light"]
             }
+            href="#skill"
           >
             Skills
           </a>
@@ -54,6 +58,7 @@ export const SlidePage = () => {
             className={
               darkMode ? styles["underline-dark"] : styles["underline-light"]
             }
+            href="#contact"
           >
             Contact
           </a>
