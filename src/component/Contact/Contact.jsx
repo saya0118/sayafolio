@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { collection, getDocs } from "firebase/firestore";
+import emailjs from '@emailjs/browser';
 import styles from "./Contact.module.css";
 import { useColor } from "../Context/Context";
 import { Social } from "../Social";
@@ -20,6 +21,8 @@ export const Contact = () => {
   const [message, setMessage] = useState("");
   const [loader, setLoader] = useState(false);
 
+  const form = useRef();
+
   useEffect(() => {
     getDocs(test).then((data) => {
       console.log(data);
@@ -28,36 +31,13 @@ export const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // setLoader(true);
 
-    // db.collection("contacts")
-    //   .add({
-    //     name: name,
-    //     email: email,
-    //     message: message,
-    //   })
-    //   .then(() => {
-    //     alert("Message has been sent to Saya!");
-    //     setLoader(false);
-    //   })
-    //   .catch((error) => {
-    //     alert(error.message);
-    //     setLoader(false);
-    //   });
-
-    // setName("");
-    // setEmail("");
-    // setMessage("");
-    sendMail();
-  };
-
-  const sendMail = () => {
-    console.log("call");
-    sendEmail({
-      name: name,
-      email: email,
-      message: message,
-    });
+    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+        .then((result) => {
+          console.log(result.text);
+        }, (error) => {
+          console.log(error.text);
+        });
   };
 
   return (
@@ -90,26 +70,24 @@ export const Contact = () => {
           className={`${styles["contact-form"]} ${styles["contact-flex-inner"]}`}
         >
           <form
+            ref={form}
             className={styles["contact-form-container"]}
             onSubmit={handleSubmit}
           >
             <input
+              type="text" name="user_name"
               className={styles["contact-input"]}
               placeholder="Name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
             />
             <input
+              type="email" name="user_email"
               className={styles["contact-input"]}
               placeholder="Email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
             />
             <textarea
+              name="message"
               className={`${styles["contact-input"]} ${styles["contact-message"]}`}
               placeholder="Message"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
             />
             <button className={styles["contact-button"]} type="submit">
               Send Message
