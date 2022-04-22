@@ -37,6 +37,16 @@
     margin: 20px 0;
   }
 
+  .underline-light{
+    text-decoration: none;
+    color: var(--main-color-charcoal);
+  }
+  
+  .underline-dark{
+    text-decoration: none;
+    color: var(--main-color-white);
+  }
+
   .underline-light:hover {
     text-decoration-color: var(--main-color-yellow);
     text-decoration: underline;
