@@ -61,7 +61,7 @@ export const Contact = () => {
   };
 
   return (
-    <div className={styles.contact}>
+    <div className={styles.contact} id="contact">
       <h1
         className={`${styles["title"]} ${
           darkMode ? styles["title-name-dark"] : ""

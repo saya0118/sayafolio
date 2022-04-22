@@ -14,7 +14,7 @@ import { SlidePage } from "../SlidePage";
 export const Header = () => {
   const darkMode = useColor();
   return (
-    <div className={styles.header}>
+    <div className={styles.header} id="header">
       <div className={styles["nav-bar"]}>
         <div className={styles["nav-left"]}>
           <ul className={`${styles["w-sh"]} ${styles["ul-flex"]}`}>
@@ -45,6 +45,7 @@ export const Header = () => {
                     ? styles["underline-dark"]
                     : styles["underline-light"]
                 }
+                href="#header"
               >
                 Home
               </a>
@@ -56,6 +57,7 @@ export const Header = () => {
                     ? styles["underline-dark"]
                     : styles["underline-light"]
                 }
+                href="#about"
               >
                 About
               </a>
@@ -67,6 +69,7 @@ export const Header = () => {
                     ? styles["underline-dark"]
                     : styles["underline-light"]
                 }
+                href="works"
               >
                 Projects
               </a>
@@ -78,6 +81,7 @@ export const Header = () => {
                     ? styles["underline-dark"]
                     : styles["underline-light"]
                 }
+                href="skill"
               >
                 Skills
               </a>
@@ -89,6 +93,7 @@ export const Header = () => {
                     ? styles["underline-dark"]
                     : styles["underline-light"]
                 }
+                href="contact"
               >
                 Contact
               </a>
