@@ -56,10 +56,9 @@ export const Work = () => {
               </p>
               <h3 className={styles["project-title"]}>WellBingo</h3>
               <p className={styles["project-description"]}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
-                fugit sit fuga dignissimos. Expedita ipsa nobis et molestias id
-                aspernatur? Aliquam iusto eveniet ea enim voluptatum praesentium
-                reprehenderit cumque quidem.
+                I built a full stack MERN app which is combined a bingo game
+                with a CRUD app. This app helps users to encourage to make a
+                habit of daily tasks and keep their wellness in their minds.
               </p>
               <div className={styles["link-container"]}>
                 <Button
@@ -89,7 +88,8 @@ export const Work = () => {
             </div>
             <div className={styles["project-description-box"]}>
               <p className={styles["project-language"]}>
-                TypeScript | React Hooks | CSS modules | Cypress | Responsive Design
+                TypeScript | React Hooks | CSS modules | Cypress | Responsive
+                Design
               </p>
               <h3 className={styles["project-title"]}>Sayabucks</h3>
               <p className={styles["project-description"]}>
@@ -158,10 +158,7 @@ export const Work = () => {
               </p>
               <h3 className={styles["project-title"]}>Sayafolio</h3>
               <p className={styles["project-description"]}>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Aliquam consequuntur sunt rem a ab sequi. Architecto
-                necessitatibus provident aliquid voluptatum qui. Commodi
-                voluptas aut repellat. Assumenda totam sint quas dolores.
+                
               </p>
               <div className={styles["link-container"]}>
                 <Button size="small" text="LIVE" href="#" />
