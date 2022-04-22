@@ -61,7 +61,11 @@ export const Work = () => {
                 reprehenderit cumque quidem.
               </p>
               <div className={styles["link-container"]}>
-                <Button size="small" text="LIVE" href="#" />
+                <Button
+                  size="small"
+                  text="LIVE"
+                  href="https://6260e8180645b6053b64c9ca--silver-malasada-4fc0ae.netlify.app/"
+                />
                 <Button
                   size="small"
                   text="CODE"
