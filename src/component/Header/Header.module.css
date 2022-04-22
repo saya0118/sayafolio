@@ -48,6 +48,16 @@ li {
   font-size: var(--font-size-sm);
 }
 
+.underline-light{
+  text-decoration: none;
+  color: var(--main-color-charcoal);
+}
+
+.underline-dark{
+  text-decoration: none;
+  color: var(--main-color-white);
+}
+
 .underline-light:hover {
   text-decoration: underline;
   text-underline-offset: 5px;

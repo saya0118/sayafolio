@@ -69,7 +69,7 @@ export const Header = () => {
                     ? styles["underline-dark"]
                     : styles["underline-light"]
                 }
-                href="works"
+                href="#works"
               >
                 Projects
               </a>
@@ -81,7 +81,7 @@ export const Header = () => {
                     ? styles["underline-dark"]
                     : styles["underline-light"]
                 }
-                href="skill"
+                href="#skill"
               >
                 Skills
               </a>
@@ -93,7 +93,7 @@ export const Header = () => {
                     ? styles["underline-dark"]
                     : styles["underline-light"]
                 }
-                href="contact"
+                href="#contact"
               >
                 Contact
               </a>
