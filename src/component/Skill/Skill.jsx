@@ -63,7 +63,7 @@ export const Skill = () => {
             darkMode ? styles["section-dark"] : styles["section-light"]
           }`}
         >
-          <h2 className={styles["skill-title"]}>Flameworks/Libraries</h2>
+          <h2 className={styles["skill-title"]}>Frameworks/Libraries</h2>
           <div className={styles["skill-flex"]}>
             <div className={styles["skill-item"]}>
               <img className={styles.img} src={IconReact} />
