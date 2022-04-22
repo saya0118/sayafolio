@@ -89,12 +89,12 @@ export const Work = () => {
             </div>
             <div className={styles["project-description-box"]}>
               <p className={styles["project-language"]}>
-                TypeScript | React Hooks | CSS modules | Responsive Design
+                TypeScript | React Hooks | CSS modules | Cypress | Responsive Design
               </p>
               <h3 className={styles["project-title"]}>Sayabucks</h3>
               <p className={styles["project-description"]}>
                 I recreated the Starbucks landing page from scratch using React,
-                TypeScript, etc.
+                TypeScript, CSS modules, and cypress for testing.
               </p>
               <div className={styles["link-container"]}>
                 <Button size="small" text="LIVE" href="#" />
