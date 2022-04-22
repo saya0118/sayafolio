@@ -92,10 +92,8 @@ export const Work = () => {
               </p>
               <h3 className={styles["project-title"]}>Sayabucks</h3>
               <p className={styles["project-description"]}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
-                fugit sit fuga dignissimos. Expedita ipsa nobis et molestias id
-                aspernatur? Aliquam iusto eveniet ea enim voluptatum praesentium
-                reprehenderit cumque quidem.
+                I recreated the Starbucks landing page from scratch using React,
+                TypeScript, etc.
               </p>
               <div className={styles["link-container"]}>
                 <Button size="small" text="LIVE" href="#" />
