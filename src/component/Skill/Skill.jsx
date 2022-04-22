@@ -24,7 +24,7 @@ import { useColor } from "../Context/Context";
 export const Skill = () => {
   const darkMode = useColor();
   return (
-    <div className={styles.skill}>
+    <div className={styles.skill} id="skill">
       <h1
         className={`${styles["title"]} ${
           darkMode ? styles["title-name-dark"] : ""

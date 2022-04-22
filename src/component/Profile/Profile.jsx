@@ -8,7 +8,7 @@ import { useColor } from "../Context/Context";
 export const Profile = () => {
   const darkMode = useColor();
   return (
-    <div className={styles.profile}>
+    <div className={styles.profile} id="about">
       <div className={styles.container}>
         <div className={styles.image}>
           <img

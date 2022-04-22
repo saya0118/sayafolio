@@ -25,7 +25,7 @@ export const Work = () => {
   }, []);
 
   return (
-    <div style={themeStyle} className={styles.work}>
+    <div style={themeStyle} className={styles.work} id="works">
       <div className={styles["work-container"]}>
         <div className={styles["section-title"]}>
           <h1
