@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { collection, getDocs } from "firebase/firestore";
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
 import styles from "./Contact.module.css";
 import { useColor } from "../Context/Context";
 import { Social } from "../Social";
@@ -29,15 +29,26 @@ export const Contact = () => {
     });
   });
 
+  console.log(process.env);
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
-        .then((result) => {
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_YOUR_SERVICE_ID,
+        process.env.REACT_APP_YOUR_TEMPLATE_ID,
+        form.current,
+        process.env.REACT_APP_YOUR_PUBLIC_KEY
+      )
+      .then(
+        (result) => {
           console.log(result.text);
-        }, (error) => {
+        },
+        (error) => {
           console.log(error.text);
-        });
+        }
+      );
   };
 
   return (
@@ -75,12 +86,14 @@ export const Contact = () => {
             onSubmit={handleSubmit}
           >
             <input
-              type="text" name="user_name"
+              type="text"
+              name="user_name"
               className={styles["contact-input"]}
               placeholder="Name"
             />
             <input
-              type="email" name="user_email"
+              type="email"
+              name="user_email"
               className={styles["contact-input"]}
               placeholder="Email"
             />
