@@ -27,8 +27,6 @@ export const Contact = () => {
     getDocs(test).then((data) => {});
   });
 
-  console.log(process.env);
-
   const handleSubmit = (e) => {
     e.preventDefault();
 
