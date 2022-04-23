@@ -19,6 +19,7 @@ export const Social = () => {
         <li className={styles["social-list"]}>
           <a
             className={styles["social-link"]}
+            target="_blank"
             href="https://www.linkedin.com/in/sayaka-matsuda-659338211/"
           />
           <button style={themeStyles}　className={styles["social-button"]}>
