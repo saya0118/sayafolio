@@ -24,9 +24,7 @@ export const Contact = () => {
   const form = useRef();
 
   useEffect(() => {
-    getDocs(test).then((data) => {
-      console.log(data);
-    });
+    getDocs(test).then((data) => {});
   });
 
   console.log(process.env);
