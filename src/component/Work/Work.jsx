@@ -46,7 +46,7 @@ export const Work = () => {
               <img
                 className={styles["project-image"]}
                 src={imgWellbingo}
-                alt=""
+                alt="wellbingo app"
               />
             </div>
             <div className={styles["project-description-box"]}>
@@ -83,7 +83,7 @@ export const Work = () => {
               <img
                 className={styles["project-image"]}
                 src={imgSayabucks}
-                alt="sayabucks image"
+                alt="sayabucks"
               />
             </div>
             <div className={styles["project-description-box"]}>
@@ -94,10 +94,16 @@ export const Work = () => {
               <h3 className={styles["project-title"]}>Sayabucks</h3>
               <p className={styles["project-description"]}>
                 I recreated the Starbucks landing page from scratch using React,
-                TypeScript, CSS modules, and cypress for testing.
+                TypeScript, CSS modules, and cypress for testing. This project made me
+                understanding grid and flexbox layout more. Moreover, I
+                got used to testing on Cypress because of it.
               </p>
               <div className={styles["link-container"]}>
-                <Button size="small" text="LIVE" href="https://6262f94941a7c221a24dce7b--funny-empanada-bbcd3a.netlify.app/" />
+                <Button
+                  size="small"
+                  text="LIVE"
+                  href="https://6262f94941a7c221a24dce7b--funny-empanada-bbcd3a.netlify.app/"
+                />
                 <Button
                   size="small"
                   text="CODE"
@@ -115,7 +121,7 @@ export const Work = () => {
               <img
                 className={styles["project-image"]}
                 src={imgPortfolio}
-                alt=""
+                alt="voyage note"
               />
             </div>
             <div className={styles["project-description-box"]}>
@@ -123,12 +129,11 @@ export const Work = () => {
                 TypeScript | React Hooks | Tailwind.css | Google API | Unsplash
                 API
               </p>
-              <h3 className={styles["project-title"]}>Voyage Notes</h3>
+              <h3 className={styles["project-title"]}>Voyage Note</h3>
               <p className={styles["project-description"]}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
-                fugit sit fuga dignissimos. Expedita ipsa nobis et molestias id
-                aspernatur? Aliquam iusto eveniet ea enim voluptatum praesentium
-                reprehenderit cumque quidem.
+                This is a travel app using unsplah API and google API so that
+                users can see how many countries they've been so far at a
+                glance. I'm still working on creating a few more functions.
               </p>
               <div className={styles["link-container"]}>
                 <Button size="small" text="LIVE" href="#" />
@@ -149,19 +154,22 @@ export const Work = () => {
               <img
                 className={styles["project-image"]}
                 src={imgPortfolio}
-                alt=""
+                alt="saya's portfolio"
               />
             </div>
             <div className={styles["project-description-box"]}>
               <p className={styles["project-language"]}>
-                React | React Hooks | CSS Modules | Firebase | Responsive Design
+                React | React Hooks | CSS Modules | Firebase | Nodemailer |
+                Responsive Design
               </p>
               <h3 className={styles["project-title"]}>Sayafolio</h3>
               <p className={styles["project-description"]}>
-                
+                This portfolio website has a day/night mode which shows my
+                favorite motto, "Balance work and private life". I tried to use
+                both of ways of Firebase and Nodemailer fot the contact form as
+                a practice.
               </p>
               <div className={styles["link-container"]}>
-                <Button size="small" text="LIVE" href="#" />
                 <Button
                   size="small"
                   text="CODE"
