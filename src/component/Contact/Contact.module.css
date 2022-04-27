@@ -18,6 +18,11 @@
     0 0 60px rgb(179, 255, 0);
 }
 
+.contact-address:hover{
+  cursor: pointer;
+  color: var(--main-color-gray)
+}
+
 @keyframes flickering {
   0% {
     border-color: transparent;
@@ -139,10 +144,6 @@
 
   .contact-title {
     font-size: var(--font-size-md);
-  }
-
-  .contact-info {
-    text-align: left;
   }
 
   .contact-gif {

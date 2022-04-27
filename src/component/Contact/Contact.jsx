@@ -67,7 +67,7 @@ export const Contact = () => {
           className={`${styles["contact-detail"]} ${styles["contact-flex-inner"]}`}
         >
           <h2 className={styles["contact-title"]}>Mail</h2>
-          <a className={styles["contact-info"]}>chemi0802@gmail.com</a>
+          <a className={styles["contact-address"]} onClick={() => (window.location = "mailto:chemi0802@gmail.com")}>chemi0802@gmail.com</a>
           <h2 className={styles["contact-title"]}>Phone</h2>
           <p className={styles["contact-info"]}>+1 7788725098</p>
           <Social />
