@@ -18,17 +18,17 @@ export const Social = () => {
       <ul className={styles["social-ul"]}>
         <li className={styles["social-list"]}>
           <a
-            className={styles["social-link"]}
             target="_blank"
             href="https://www.linkedin.com/in/sayaka-matsuda-659338211/"
-          />
-          <button style={themeStyles}　className={styles["social-button"]}>
-            <img
-              className={styles["social-img"]}
-              src={darkMode ? darkLinkedin : iconLinkedin}
-              alt="linked in"
-            />
-          </button>
+          >
+            <button style={themeStyles} className={styles["social-button"]}>
+              <img
+                className={styles["social-img"]}
+                src={darkMode ? darkLinkedin : iconLinkedin}
+                alt="linked in"
+              />
+            </button>
+          </a>
         </li>
         <li className={styles["social-list"]}>
           <a target="_blank" href="https://github.com/saya0118">
