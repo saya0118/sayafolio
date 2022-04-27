@@ -1,16 +1,15 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React, { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
 import { App } from "./component/App";
 import { ContextProvider } from "./component/Context/Context";
-import reportWebVitals from "./reportWebVitals";
 
-ReactDOM.render(
-  <React.StrictMode>
+const rootElement = document.getElementById("root");
+const root = createRoot(rootElement);
+
+root.render(
+  <StrictMode>
     <ContextProvider>
       <App />
     </ContextProvider>
-  </React.StrictMode>,
-  document.getElementById("root")
+  </StrictMode>
 );
-
-reportWebVitals();
