@@ -129,7 +129,7 @@ export const Work = () => {
             </div>
             <div className={styles["project-description-box"]}>
               <p className={styles["project-language"]}>
-                React | React Hooks | Redux | SASS(SCSS) | Unsplash API |
+                React | React Hooks | Redux | SASS(SCSS) | Material UI(MUI) | Unsplash API |
                 Responsive Design
               </p>
               <h3 className={styles["project-title"]}>Search Pics</h3>
@@ -139,7 +139,7 @@ export const Work = () => {
                 the data.
               </p>
               <div className={styles["link-container"]}>
-                <Button size="small" text="LIVE" href="#" />
+                <Button size="small" text="LIVE" href="https://search-photos-one.vercel.app/" />
                 <Button
                   size="small"
                   text="DETAIL"
