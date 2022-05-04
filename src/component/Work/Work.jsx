@@ -69,7 +69,7 @@ export const Work = () => {
                 />
                 <Button
                   size="small"
-                  text="CODE"
+                  text="DETAIL"
                   href="https://github.com/saya0118/WellBingo"
                 />
               </div>
@@ -95,9 +95,10 @@ export const Work = () => {
               <h3 className={styles["project-title"]}>Sayabucks</h3>
               <p className={styles["project-description"]}>
                 I recreated the Starbucks landing page from scratch using React,
-                TypeScript, CSS modules, and cypress for testing. This project
-                made me understanding grid and flexbox layout more. Moreover, I
-                got used to testing on Cypress because of it.
+                TypeScript, CSS modules, and Cypress for testing. This project
+                made me understanding grid and flexbox layout more and enhanced
+                my 'design to code' skill. Moreover, I got used to testing on
+                Cypress thanks to this project.
               </p>
               <div className={styles["link-container"]}>
                 <Button
@@ -107,8 +108,76 @@ export const Work = () => {
                 />
                 <Button
                   size="small"
-                  text="CODE"
+                  text="DETAIL"
                   href="https://github.com/saya0118/sayabucks"
+                />
+              </div>
+            </div>
+          </li>
+          <li
+            className={`${styles["project-list"]} ${
+              isVisible ? styles["animate-even"] : ""
+            } `}
+          >
+            <div className={styles["project-img-box"]}>
+              <img
+                className={styles["project-image"]}
+                src={imgSearchPics}
+                alt="search pics"
+              />
+            </div>
+            <div className={styles["project-description-box"]}>
+              <p className={styles["project-language"]}>
+                React | React Hooks | Redux | SASS(SCSS) | Unsplash API |
+                Responsive Design
+              </p>
+              <h3 className={styles["project-title"]}>Search Pics</h3>
+              <p className={styles["project-description"]}>
+                This app is the first project that I used React/Redux for the
+                first time. I used Redux to make the favorite function and store
+                the data.
+              </p>
+              <div className={styles["link-container"]}>
+                <Button size="small" text="LIVE" href="#" />
+                <Button
+                  size="small"
+                  text="DETAIL"
+                  href="https://github.com/saya0118/sayafolio"
+                />
+              </div>
+            </div>
+          </li>
+          <li
+            className={`${styles["project-list"]} ${
+              isVisible ? styles["animate-odd"] : ""
+            } `}
+          >
+            <div className={styles["project-img-box"]}>
+              <img
+                className={styles["project-image"]}
+                src={imgPortfolio}
+                alt="sayafolio"
+              />
+            </div>
+            <div className={styles["project-description-box"]}>
+              <p className={styles["project-language"]}>
+                React | CSS modules | Firebase | Nodemailer | Responsive Design
+              </p>
+              <h3 className={styles["project-title"]}>Sayafolio</h3>
+              <p className={styles["project-description"]}>
+                I created dark mode using React useContext. I found it's very
+                useful and more simple to use comparing to Redux.
+              </p>
+              <div className={styles["link-container"]}>
+                <Button
+                  size="small"
+                  text="LIVE"
+                  href="https://sayafolio.web.app/"
+                />
+                <Button
+                  size="small"
+                  text="DETAIL"
+                  href="https://github.com/saya0118/sayafolio"
                 />
               </div>
             </div>
@@ -140,41 +209,8 @@ export const Work = () => {
                 <Button size="small" text="LIVE" href="#" />
                 <Button
                   size="small"
-                  text="CODE"
+                  text="DETAIL"
                   href="https://github.com/saya0118/voyage-notes"
-                />
-              </div>
-            </div>
-          </li>
-          <li
-            className={`${styles["project-list"]} ${
-              isVisible ? styles["animate-even"] : ""
-            } `}
-          >
-            <div className={styles["project-img-box"]}>
-              <img
-                className={styles["project-image"]}
-                src={imgSearchPics}
-                alt="search pics"
-              />
-            </div>
-            <div className={styles["project-description-box"]}>
-              <p className={styles["project-language"]}>
-                React | React Hooks | Redux | SASS(SCSS) | Unsplash API |
-                Responsive Design
-              </p>
-              <h3 className={styles["project-title"]}>Search Pics</h3>
-              <p className={styles["project-description"]}>
-                This app is the first project that I used React for the first
-                time. I used Redux to make the favorite function and store the
-                data. 
-              </p>
-              <div className={styles["link-container"]}>
-                <Button size="small" text="LIVE" href="#" />
-                <Button
-                  size="small"
-                  text="CODE"
-                  href="https://github.com/saya0118/sayafolio"
                 />
               </div>
             </div>
