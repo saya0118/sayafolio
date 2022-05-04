@@ -6,6 +6,7 @@ import imgPortfolio from "../../image/work-portfolio.svg";
 import imgSayabucks from "../../image/sayabucks.svg";
 import imgWellbingo from "../../image/wellbingo.svg";
 import imgSearchPics from "../../image/search-pics.svg";
+import imgCommingSoon from "../../image/comming-soon.png";
 
 export const Work = () => {
   const darkMode = useColor();
@@ -161,12 +162,15 @@ export const Work = () => {
             </div>
             <div className={styles["project-description-box"]}>
               <p className={styles["project-language"]}>
-                React | CSS modules | Firebase | Nodemailer | Responsive Design
+                React | React Hooks | CSS modules | Firebase | Nodemailer |
+                Responsive Design
               </p>
               <h3 className={styles["project-title"]}>Sayafolio</h3>
               <p className={styles["project-description"]}>
                 I created dark mode using React useContext. I found it's very
-                useful and more simple to use comparing to Redux.
+                useful and more simple to use comparing to Redux. This site has
+                a contact form and I used Nodemailer for the first time to make
+                it actually send to my mail address.
               </p>
               <div className={styles["link-container"]}>
                 <Button
@@ -190,7 +194,7 @@ export const Work = () => {
             <div className={styles["project-img-box"]}>
               <img
                 className={styles["project-image"]}
-                src={imgPortfolio}
+                src={imgCommingSoon}
                 alt="voyage note"
               />
             </div>
