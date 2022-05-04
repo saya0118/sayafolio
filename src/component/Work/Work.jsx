@@ -5,6 +5,7 @@ import { useColor } from "../Context/Context";
 import imgPortfolio from "../../image/work-portfolio.svg";
 import imgSayabucks from "../../image/sayabucks.svg";
 import imgWellbingo from "../../image/wellbingo.svg";
+import imgSearchPics from "../../image/search-pics.svg";
 
 export const Work = () => {
   const darkMode = useColor();
@@ -94,8 +95,8 @@ export const Work = () => {
               <h3 className={styles["project-title"]}>Sayabucks</h3>
               <p className={styles["project-description"]}>
                 I recreated the Starbucks landing page from scratch using React,
-                TypeScript, CSS modules, and cypress for testing. This project made me
-                understanding grid and flexbox layout more. Moreover, I
+                TypeScript, CSS modules, and cypress for testing. This project
+                made me understanding grid and flexbox layout more. Moreover, I
                 got used to testing on Cypress because of it.
               </p>
               <div className={styles["link-container"]}>
@@ -153,23 +154,23 @@ export const Work = () => {
             <div className={styles["project-img-box"]}>
               <img
                 className={styles["project-image"]}
-                src={imgPortfolio}
-                alt="saya's portfolio"
+                src={imgSearchPics}
+                alt="search pics"
               />
             </div>
             <div className={styles["project-description-box"]}>
               <p className={styles["project-language"]}>
-                React | React Hooks | CSS Modules | Firebase | Nodemailer |
+                React | React Hooks | Redux | SASS(SCSS) | Unsplash API |
                 Responsive Design
               </p>
-              <h3 className={styles["project-title"]}>Sayafolio</h3>
+              <h3 className={styles["project-title"]}>Search Pics</h3>
               <p className={styles["project-description"]}>
-                This portfolio website has a day/night mode which shows my
-                favorite motto, "Balance work and private life". I tried to use
-                both of ways of Firebase and Nodemailer fot the contact form as
-                a practice.
+                This app is the first project that I used React for the first
+                time. I used Redux to make the favorite function and store the
+                data. 
               </p>
               <div className={styles["link-container"]}>
+                <Button size="small" text="LIVE" href="#" />
                 <Button
                   size="small"
                   text="CODE"
