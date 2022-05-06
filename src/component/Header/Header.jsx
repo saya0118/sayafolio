@@ -18,17 +18,17 @@ export const Header = () => {
       <div className={styles["nav-bar"]}>
         <div className={styles["nav-left"]}>
           <ul className={`${styles["w-sh"]} ${styles["ul-flex"]}`}>
-            <li className={styles['nav-list']}>
+            <li className={styles["nav-list"]}>
               <img
                 src={lightLogo}
                 alt="sayaka's logo"
                 className={styles.logo}
               />
             </li>
-            <li className={styles['nav-list']}>
+            <li className={styles["nav-list"]}>
               <p className={styles.name}>Sayaka Matsuda</p>
             </li>
-            <li className={styles['nav-list']}>
+            <li className={styles["nav-list"]}>
               <ToggleButton />
             </li>
           </ul>
@@ -147,7 +147,11 @@ export const Header = () => {
           </p>
           <div className={styles["mobile-centre"]}>
             <Social />
-            <Button size="normal" text="Resume" href="#" />
+            <Button
+              size="normal"
+              text="Resume"
+              href="https://docs.google.com/document/d/e/2PACX-1vR0ijGuENX1qqQK0O4ZPrUL8hN8DfbnOXkVTT6AXU43XiL8P0f98KBg_KDaiVsD_LyqmlbnBN8o9pHH/pub"
+            />
           </div>
           <div className={styles["gif-container"]}>
             <img

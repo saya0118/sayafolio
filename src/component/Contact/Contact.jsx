@@ -67,11 +67,20 @@ export const Contact = () => {
           className={`${styles["contact-detail"]} ${styles["contact-flex-inner"]}`}
         >
           <h2 className={styles["contact-title"]}>Mail</h2>
-          <a className={styles["contact-address"]} onClick={() => (window.location = "mailto:chemi0802@gmail.com")}>chemi0802@gmail.com</a>
+          <a
+            className={styles["contact-address"]}
+            onClick={() => (window.location = "mailto:chemi0802@gmail.com")}
+          >
+            chemi0802@gmail.com
+          </a>
           <h2 className={styles["contact-title"]}>Phone</h2>
           <p className={styles["contact-info"]}>+1 7788725098</p>
           <Social />
-          <Button text="Resume" size="normal" href="#" />
+          <Button
+            text="Resume"
+            size="normal"
+            href="https://docs.google.com/document/d/e/2PACX-1vR0ijGuENX1qqQK0O4ZPrUL8hN8DfbnOXkVTT6AXU43XiL8P0f98KBg_KDaiVsD_LyqmlbnBN8o9pHH/pub"
+          />
         </div>
         <div
           className={`${styles["contact-form"]} ${styles["contact-flex-inner"]}`}
