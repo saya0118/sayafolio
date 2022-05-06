@@ -53,7 +53,7 @@ export const Work = () => {
             </div>
             <div className={styles["project-description-box"]}>
               <p className={styles["project-language"]}>
-                React | Redux | SASS(SCSS) | Material UI | MongoDB | Express.js
+                React | Redux | SCSS | Material UI | MongoDB | Express.js
                 | Responsive Design
               </p>
               <h3 className={styles["project-title"]}>WellBingo</h3>
@@ -129,7 +129,7 @@ export const Work = () => {
             </div>
             <div className={styles["project-description-box"]}>
               <p className={styles["project-language"]}>
-                React | React Hooks | Redux | SASS(SCSS) | Material UI(MUI) | Unsplash API |
+                React | React Hooks | Redux | SCSS | Material UI | Unsplash API |
                 Responsive Design
               </p>
               <h3 className={styles["project-title"]}>Search Pics</h3>
@@ -156,56 +156,18 @@ export const Work = () => {
             <div className={styles["project-img-box"]}>
               <img
                 className={styles["project-image"]}
-                src={imgPortfolio}
-                alt="sayafolio"
-              />
-            </div>
-            <div className={styles["project-description-box"]}>
-              <p className={styles["project-language"]}>
-                React | React Hooks | CSS modules | Firebase | Nodemailer |
-                Responsive Design
-              </p>
-              <h3 className={styles["project-title"]}>Sayafolio</h3>
-              <p className={styles["project-description"]}>
-                I created dark mode using React useContext. I found it's very
-                useful and more simple to use comparing to Redux. This site has
-                a contact form and I used Nodemailer for the first time to make
-                it actually send to my mail address.
-              </p>
-              <div className={styles["link-container"]}>
-                <Button
-                  size="small"
-                  text="LIVE"
-                  href="https://sayafolio.web.app/"
-                />
-                <Button
-                  size="small"
-                  text="DETAIL"
-                  href="https://github.com/saya0118/sayafolio"
-                />
-              </div>
-            </div>
-          </li>
-          <li
-            className={`${styles["project-list"]} ${
-              isVisible ? styles["animate-odd"] : ""
-            } `}
-          >
-            <div className={styles["project-img-box"]}>
-              <img
-                className={styles["project-image"]}
                 src={imgCommingSoon}
                 alt="voyage note"
               />
             </div>
             <div className={styles["project-description-box"]}>
               <p className={styles["project-language"]}>
-                TypeScript | React Hooks | Tailwind.css | Google API | Unsplash
-                API
+                Node.js | React | React Hooks | Tailwind.css | Mapbox | Unsplash
+                API | MongoDB | Express
               </p>
               <h3 className={styles["project-title"]}>Voyage Note</h3>
               <p className={styles["project-description"]}>
-                This is a travel app using unsplah API and google API so that
+                This is a travel pinning app using unsplah API and Mapbox so that
                 users can see how many countries they've been so far at a
                 glance. I'm still working on creating a few more functions.
               </p>

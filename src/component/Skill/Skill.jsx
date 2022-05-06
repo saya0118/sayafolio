@@ -67,15 +67,15 @@ export const Skill = () => {
           <div className={styles["skill-flex"]}>
             <div className={styles["skill-item"]}>
               <img className={styles.img} src={IconReact} />
-              <h5 className={styles["skill-name"]}>React</h5>
+              <h5 className={`${styles["skill-name"]} ${styles["wavy"]}`}>React</h5>
             </div>
             <div className={styles["skill-item"]}>
               <img className={styles.img} src={IconRedux} />
-              <h5 className={styles["skill-name"]}>Redux</h5>
+              <h5 className={`${styles["skill-name"]} ${styles["wavy"]}`}>Redux</h5>
             </div>
             <div className={styles["skill-item"]}>
               <img className={styles.img} src={IconSass} />
-              <h5 className={styles["skill-name"]}>Sass</h5>
+              <h5 className={styles["skill-name"]}>SCSS</h5>
             </div>
             <div className={styles["skill-item"]}>
               <img className={styles.img} src={IconTailwind} />

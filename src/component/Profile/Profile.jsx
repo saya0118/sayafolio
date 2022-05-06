@@ -30,13 +30,10 @@ export const Profile = () => {
           <p className={styles["profile-description"]}>
             Hi! I'm Saya.
             <br />
-            I'm a <b>React</b> developer who is currently pivoting my way into
-            tech. My background in the hospitality industry and international
-            agriculture education has given me the ability to be a diversified
-            thinker, challenging and a team player. I'm a curious person who is
-            never stop learning and also I can always find enjoyments and
+            I'm a <b>React developer</b> who is passionate about improving my skill set. I'm a curious person who
+            is never stop learning and also I can always find enjoyments and
             excitements in any difficult situation. I'm super excited about
-            working in a team and improve my coding skills!
+            working in a team and making a huge impact on society as a part of your team!
           </p>
           <div className={styles["profile-mobile"]}>
             <Social />

@@ -101,6 +101,11 @@
   text-align: center;
 }
 
+.wavy{
+  text-decoration: underline wavy var(--main-color-yellow);
+  
+}
+
 @media screen and (max-width: 930px) {
   .skill {
     height: 550px;
