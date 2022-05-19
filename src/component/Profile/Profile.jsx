@@ -30,10 +30,12 @@ export const Profile = () => {
           <p className={styles["profile-description"]}>
             Hi! I'm Saya.
             <br />
-            I'm a <b>React developer</b> who is passionate about improving my skill set. I'm a curious person who
-            is never stop learning and also I can always find enjoyments and
-            excitements in any difficult situation. I'm super excited about
-            working in a team and making a huge impact on society as a part of your team!
+            I'm a <b>React developer</b> who has an appetite for continuously
+            growth and impact. I always take the harder way because I believe
+            that the right decisions are usually the harder ones, but at the same
+            time I can always find enjoyments and excitements in any difficult
+            situation. I'm super excited about working in a team and making a
+            huge impact on society together!
           </p>
           <div className={styles["profile-mobile"]}>
             <Social />
