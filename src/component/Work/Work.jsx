@@ -66,7 +66,7 @@ export const Work = () => {
                 <Button
                   size="small"
                   text="LIVE"
-                  href="https://6260e8180645b6053b64c9ca--silver-malasada-4fc0ae.netlify.app/"
+                  href="https://silver-malasada-4fc0ae.netlify.app/"
                 />
                 <Button
                   size="small"
@@ -105,7 +105,7 @@ export const Work = () => {
                 <Button
                   size="small"
                   text="LIVE"
-                  href="https://6262f94941a7c221a24dce7b--funny-empanada-bbcd3a.netlify.app/"
+                  href="https://funny-empanada-bbcd3a.netlify.app/"
                 />
                 <Button
                   size="small"

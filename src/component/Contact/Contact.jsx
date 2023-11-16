@@ -74,7 +74,7 @@ export const Contact = () => {
             chemi0802@gmail.com
           </a>
           <h2 className={styles["contact-title"]}>Phone</h2>
-          <p className={styles["contact-info"]}>+1 7788725098</p>
+          <p className={styles["contact-info"]}>+1 6722005098</p>
           <Social />
           <Button
             text="Resume"
