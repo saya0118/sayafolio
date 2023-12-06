@@ -1,25 +1,17 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { collection, getDocs } from "firebase/firestore";
 import emailjs from "@emailjs/browser";
 import styles from "./Contact.module.css";
 import { useColor } from "../Context/Context";
 import { Social } from "../Social";
-import { db, functions } from "./firebase";
-import { httpsCallable } from "firebase/functions";
+import { db } from "./firebase";
 import contactGif from "../../image/contact.gif";
 import imgMoon from "../../image/moon.svg";
 import { Button } from "../Button";
 
-const sendEmail = httpsCallable(functions, "sendEmail");
-
 export const Contact = () => {
   const test = collection(db, "contacts");
   const darkMode = useColor();
-
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-  const [loader, setLoader] = useState(false);
 
   const form = useRef();
 
